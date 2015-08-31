@@ -1,0 +1,1 @@
+﻿function doImport () { 	 	 	var jsonString = loadText( ds.getModelFolder().path + "Import/ccod.txt" ); 	ds.costCode.importJSON(jsonString);   }doImport();

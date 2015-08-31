@@ -1,2 +1,127 @@
-{    "toJSON": true,    "dbInfo": [{        "name": "Model",        "uuid": ""    }],    "extraProperties": {        "version": "1",        "classes": {        },        "model": {            "scriptMode": "manual"
-        }    },    "dataClasses": []}
+
+{
+	"toJSON" : true,
+	"extraProperties" : 
+	{
+		"version" : "1",
+		"classes" : 
+		{
+		},
+		"model" : 
+		{
+			"scriptMode" : "manual"
+		}
+	},
+	"dataClasses" : 
+	[
+		{
+			"name" : "costCode",
+			"className" : "costCode",
+			"collectionName" : "costCodes",
+			"scope" : "public",
+			"noEdit" : true,
+			"noSave" : true,
+			"attributes" : 
+			[
+				{
+					"name" : "id",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"autogenerate" : true,
+					"type" : "uuid",
+					"indexKind" : "btree"
+				},
+				{
+					"name" : "costCodeNumber",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "long"
+				},
+				{
+					"name" : "costCodeName",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "costCodeProject",
+					"kind" : "relatedEntity",
+					"scope" : "public",
+					"type" : "project",
+					"path" : "project"
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "id"
+				}
+			]
+		},
+		{
+			"name" : "project",
+			"className" : "project",
+			"collectionName" : "projects",
+			"scope" : "public",
+			"noEdit" : true,
+			"noSave" : true,
+			"attributes" : 
+			[
+				{
+					"name" : "id",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"autogenerate" : true,
+					"type" : "uuid",
+					"indexKind" : "btree"
+				},
+				{
+					"name" : "projectNumber",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "projectName",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "siteContactName",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "clientName",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "clientABN",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "projectCostCodes",
+					"kind" : "relatedEntities",
+					"scope" : "public",
+					"type" : "costCodes",
+					"reversePath" : true,
+					"path" : "costCodeProject"
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "id"
+				}
+			]
+		}
+	]
+}

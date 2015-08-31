@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Angular-Wakanda Step 3 - Getting the Data</title>
+
+  <script src="/bower_components/angular/angular.min.js"></script>
+  <script src="/bower_components/angular-wakanda/angular-wakanda.min.js"></script>
+  <script src="./scripts/step3.js"></script>
+</head>
+
+<body ng-app="step3">
+  <h1>Angular-Wakanda Step 3 - Getting the data</h1>
+
+  <section ng-controller="Controller">
+    <p>
+      {{projects.$totalCount}} projects found:
+      <select ng-model="project" ng-options="c.projectName for c in projects">
+        <option value="">-- Select a project to view its details --</option>
+      </select>
+    </p>
+    <p ng-show="project">Its name is <strong>{{project.projectName}}</strong></p>
+  </section>
+
+</body>
+</html>
