@@ -34,7 +34,7 @@
 //                    );
 
 
-angular.module("KendoDemos", [ "kendo.directives", "wakanda" ]).controller("MyController", function($scope, $wakanda) {
+angular.module("KendoDemos", [ "kendo.directives", "wakanda", "ngRoute" ]).controller("MyController", function($scope, $wakanda) {
 //    $http({method: "GET", url: "./products.xml"})
 //      .success(function(result){
 //        $scope.customOptions.dataSource = new kendo.data.DataSource({

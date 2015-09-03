@@ -13,6 +13,7 @@
 
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/angular/angular.min.js"></script>
+	<script src="/bower_components/angular-route/angular-route.min.js"></script>
 	<script src="/bower_components/angular-wakanda/angular-wakanda.min.js"></script>
     <script src="/js/kendo/kendo.all.min.js"></script>
 	<script src="./scripts/main.js"></script>
@@ -24,9 +25,11 @@
 	}
 </style>
 </head>
-<body  ng-app="KendoDemos" 
->
+<body  ng-app="KendoDemos">
 
+<header>
+	<h1>Header</h1>
+</header>
 
 <div id="example" ng-controller="MyController">
 
@@ -41,12 +44,11 @@
 <!--		       <div id="grid" kendo-grid k-options="gridOptions" k-ng-delay="gridOptions.dataSource.options.data"></div>-->
 
 
-<script>
+<footer>
+	<h5>Footer</h5>
+</footer>
 
-	
 
- 
-</script>
 
 
 </body>
