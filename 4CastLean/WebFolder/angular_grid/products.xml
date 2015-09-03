@@ -1,0 +1,2086 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<feed xml:base="http://demos.telerik.com/kendo-ui/service/Northwind.svc/" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Products</title>
+  <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products</id>
+  <updated>2015-09-02T03:40:08Z</updated>
+  <link rel="self" title="Products" href="Products" />
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(1)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(1)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(1)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(1)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(1)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">1</d:ProductID>
+        <d:ProductName>Chai</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">1</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">1</d:CategoryID>
+        <d:QuantityPerUnit>10 boxes x 20 bags</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">18.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">39</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">10</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(2)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(2)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(2)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(2)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(2)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">2</d:ProductID>
+        <d:ProductName>Chang</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">1</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">1</d:CategoryID>
+        <d:QuantityPerUnit>24 - 12 oz bottles</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">19.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">17</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">40</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">25</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(3)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(3)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(3)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(3)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(3)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">3</d:ProductID>
+        <d:ProductName>Aniseed Syrup</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">1</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">2</d:CategoryID>
+        <d:QuantityPerUnit>12 - 550 ml bottles</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">10.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">13</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">70</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">25</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(4)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(4)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(4)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(4)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(4)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">4</d:ProductID>
+        <d:ProductName>Chef Anton's Cajun Seasoning</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">2</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">2</d:CategoryID>
+        <d:QuantityPerUnit>48 - 6 oz jars</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">22.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">53</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">0</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(5)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(5)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(5)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(5)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(5)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">5</d:ProductID>
+        <d:ProductName>Chef Anton's Gumbo Mix</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">2</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">2</d:CategoryID>
+        <d:QuantityPerUnit>36 boxes</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">21.35</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">0</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">0</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">true</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(6)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(6)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(6)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(6)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(6)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">6</d:ProductID>
+        <d:ProductName>Grandma's Boysenberry Spread</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">3</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">2</d:CategoryID>
+        <d:QuantityPerUnit>12 - 8 oz jars</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">25.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">120</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">25</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(7)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(7)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(7)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(7)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(7)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">7</d:ProductID>
+        <d:ProductName>Uncle Bob's Organic Dried Pears</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">3</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">7</d:CategoryID>
+        <d:QuantityPerUnit>12 - 1 lb pkgs.</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">30.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">15</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">10</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(8)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(8)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(8)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(8)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(8)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">8</d:ProductID>
+        <d:ProductName>Northwoods Cranberry Sauce</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">3</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">2</d:CategoryID>
+        <d:QuantityPerUnit>12 - 12 oz jars</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">40.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">6</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">0</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(9)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(9)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(9)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(9)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(9)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">9</d:ProductID>
+        <d:ProductName>Mishi Kobe Niku</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">4</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">6</d:CategoryID>
+        <d:QuantityPerUnit>18 - 500 g pkgs.</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">97.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">29</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">0</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">true</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(10)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(10)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(10)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(10)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(10)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">10</d:ProductID>
+        <d:ProductName>Ikura</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">4</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">8</d:CategoryID>
+        <d:QuantityPerUnit>12 - 200 ml jars</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">31.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">31</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">0</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(11)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(11)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(11)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(11)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(11)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">11</d:ProductID>
+        <d:ProductName>Queso Cabrales</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">5</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">4</d:CategoryID>
+        <d:QuantityPerUnit>1 kg pkg.</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">21.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">22</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">30</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">30</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(12)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(12)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(12)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(12)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(12)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">12</d:ProductID>
+        <d:ProductName>Queso Manchego La Pastora</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">5</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">4</d:CategoryID>
+        <d:QuantityPerUnit>10 - 500 g pkgs.</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">38.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">86</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">0</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(13)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(13)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(13)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(13)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(13)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">13</d:ProductID>
+        <d:ProductName>Konbu</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">6</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">8</d:CategoryID>
+        <d:QuantityPerUnit>2 kg box</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">6.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">24</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">5</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(14)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(14)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(14)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(14)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(14)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">14</d:ProductID>
+        <d:ProductName>Tofu</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">6</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">7</d:CategoryID>
+        <d:QuantityPerUnit>40 - 100 g pkgs.</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">23.25</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">35</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">0</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(15)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(15)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(15)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(15)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(15)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">15</d:ProductID>
+        <d:ProductName>Genen Shouyu</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">6</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">2</d:CategoryID>
+        <d:QuantityPerUnit>24 - 250 ml bottles</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">15.50</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">39</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">5</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(16)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(16)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(16)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(16)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(16)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">16</d:ProductID>
+        <d:ProductName>Pavlova</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">7</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">3</d:CategoryID>
+        <d:QuantityPerUnit>32 - 500 g boxes</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">17.45</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">29</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">10</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(17)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(17)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(17)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(17)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(17)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">17</d:ProductID>
+        <d:ProductName>Alice Mutton</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">7</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">6</d:CategoryID>
+        <d:QuantityPerUnit>20 - 1 kg tins</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">39.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">0</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">0</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">true</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(18)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(18)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(18)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(18)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(18)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">18</d:ProductID>
+        <d:ProductName>Carnarvon Tigers</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">7</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">8</d:CategoryID>
+        <d:QuantityPerUnit>16 kg pkg.</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">62.50</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">42</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">0</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(19)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(19)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(19)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(19)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(19)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">19</d:ProductID>
+        <d:ProductName>Teatime Chocolate Biscuits</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">8</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">3</d:CategoryID>
+        <d:QuantityPerUnit>10 boxes x 12 pieces</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">9.20</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">25</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">5</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(20)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(20)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(20)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(20)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(20)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">20</d:ProductID>
+        <d:ProductName>Sir Rodney's Marmalade</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">8</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">3</d:CategoryID>
+        <d:QuantityPerUnit>30 gift boxes</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">81.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">40</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">0</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(21)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(21)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(21)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(21)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(21)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">21</d:ProductID>
+        <d:ProductName>Sir Rodney's Scones</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">8</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">3</d:CategoryID>
+        <d:QuantityPerUnit>24 pkgs. x 4 pieces</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">10.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">3</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">40</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">5</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(22)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(22)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(22)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(22)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(22)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">22</d:ProductID>
+        <d:ProductName>Gustaf's Knäckebröd</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">9</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">5</d:CategoryID>
+        <d:QuantityPerUnit>24 - 500 g pkgs.</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">21.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">104</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">25</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(23)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(23)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(23)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(23)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(23)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">23</d:ProductID>
+        <d:ProductName>Tunnbröd</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">9</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">5</d:CategoryID>
+        <d:QuantityPerUnit>12 - 250 g pkgs.</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">9.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">61</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">25</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(24)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(24)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(24)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(24)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(24)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">24</d:ProductID>
+        <d:ProductName>Guaraná Fantástica</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">10</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">1</d:CategoryID>
+        <d:QuantityPerUnit>12 - 355 ml cans</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">4.50</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">20</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">0</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">true</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(25)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(25)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(25)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(25)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(25)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">25</d:ProductID>
+        <d:ProductName>NuNuCa Nuß-Nougat-Creme</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">11</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">3</d:CategoryID>
+        <d:QuantityPerUnit>20 - 450 g glasses</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">14.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">76</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">30</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(26)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(26)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(26)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(26)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(26)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">26</d:ProductID>
+        <d:ProductName>Gumbär Gummibärchen</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">11</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">3</d:CategoryID>
+        <d:QuantityPerUnit>100 - 250 g bags</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">31.23</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">15</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">0</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(27)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(27)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(27)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(27)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(27)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">27</d:ProductID>
+        <d:ProductName>Schoggi Schokolade</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">11</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">3</d:CategoryID>
+        <d:QuantityPerUnit>100 - 100 g pieces</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">43.90</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">49</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">30</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(28)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(28)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(28)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(28)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(28)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">28</d:ProductID>
+        <d:ProductName>Rössle Sauerkraut</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">12</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">7</d:CategoryID>
+        <d:QuantityPerUnit>25 - 825 g cans</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">45.60</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">26</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">0</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">true</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(29)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(29)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(29)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(29)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(29)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">29</d:ProductID>
+        <d:ProductName>Thüringer Rostbratwurst</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">12</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">6</d:CategoryID>
+        <d:QuantityPerUnit>50 bags x 30 sausgs.</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">123.79</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">0</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">0</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">true</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(30)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(30)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(30)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(30)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(30)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">30</d:ProductID>
+        <d:ProductName>Nord-Ost Matjeshering</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">13</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">8</d:CategoryID>
+        <d:QuantityPerUnit>10 - 200 g glasses</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">25.89</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">10</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">15</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(31)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(31)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(31)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(31)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(31)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">31</d:ProductID>
+        <d:ProductName>Gorgonzola Telino</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">14</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">4</d:CategoryID>
+        <d:QuantityPerUnit>12 - 100 g pkgs</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">12.50</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">0</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">70</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">20</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(32)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(32)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(32)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(32)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(32)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">32</d:ProductID>
+        <d:ProductName>Mascarpone Fabioli</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">14</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">4</d:CategoryID>
+        <d:QuantityPerUnit>24 - 200 g pkgs.</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">32.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">9</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">40</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">25</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(33)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(33)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(33)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(33)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(33)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">33</d:ProductID>
+        <d:ProductName>Geitost</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">15</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">4</d:CategoryID>
+        <d:QuantityPerUnit>500 g</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">2.50</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">112</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">20</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(34)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(34)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(34)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(34)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(34)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">34</d:ProductID>
+        <d:ProductName>Sasquatch Ale</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">16</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">1</d:CategoryID>
+        <d:QuantityPerUnit>24 - 12 oz bottles</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">14.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">111</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">15</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(35)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(35)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(35)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(35)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(35)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">35</d:ProductID>
+        <d:ProductName>Steeleye Stout</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">16</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">1</d:CategoryID>
+        <d:QuantityPerUnit>24 - 12 oz bottles</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">18.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">20</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">15</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(36)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(36)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(36)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(36)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(36)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">36</d:ProductID>
+        <d:ProductName>Inlagd Sill</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">17</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">8</d:CategoryID>
+        <d:QuantityPerUnit>24 - 250 g  jars</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">19.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">112</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">20</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(37)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(37)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(37)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(37)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(37)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">37</d:ProductID>
+        <d:ProductName>Gravad lax</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">17</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">8</d:CategoryID>
+        <d:QuantityPerUnit>12 - 500 g pkgs.</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">26.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">11</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">50</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">25</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(38)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(38)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(38)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(38)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(38)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">38</d:ProductID>
+        <d:ProductName>Côte de Blaye</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">18</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">1</d:CategoryID>
+        <d:QuantityPerUnit>12 - 75 cl bottles</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">263.50</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">17</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">15</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(39)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(39)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(39)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(39)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(39)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">39</d:ProductID>
+        <d:ProductName>Chartreuse verte</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">18</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">1</d:CategoryID>
+        <d:QuantityPerUnit>750 cc per bottle</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">18.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">69</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">5</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(40)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(40)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(40)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(40)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(40)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">40</d:ProductID>
+        <d:ProductName>Boston Crab Meat</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">19</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">8</d:CategoryID>
+        <d:QuantityPerUnit>24 - 4 oz tins</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">18.40</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">123</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">30</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(41)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(41)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(41)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(41)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(41)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">41</d:ProductID>
+        <d:ProductName>Jack's New England Clam Chowder</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">19</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">8</d:CategoryID>
+        <d:QuantityPerUnit>12 - 12 oz cans</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">9.65</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">85</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">10</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(42)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(42)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(42)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(42)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(42)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">42</d:ProductID>
+        <d:ProductName>Singaporean Hokkien Fried Mee</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">20</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">5</d:CategoryID>
+        <d:QuantityPerUnit>32 - 1 kg pkgs.</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">14.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">26</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">0</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">true</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(43)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(43)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(43)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(43)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(43)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">43</d:ProductID>
+        <d:ProductName>Ipoh Coffee</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">20</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">1</d:CategoryID>
+        <d:QuantityPerUnit>16 - 500 g tins</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">46.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">17</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">10</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">25</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(44)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(44)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(44)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(44)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(44)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">44</d:ProductID>
+        <d:ProductName>Gula Malacca</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">20</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">2</d:CategoryID>
+        <d:QuantityPerUnit>20 - 2 kg bags</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">19.45</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">27</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">15</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(45)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(45)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(45)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(45)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(45)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">45</d:ProductID>
+        <d:ProductName>Rogede sild</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">21</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">8</d:CategoryID>
+        <d:QuantityPerUnit>1k pkg.</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">9.50</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">5</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">70</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">15</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(46)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(46)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(46)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(46)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(46)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">46</d:ProductID>
+        <d:ProductName>Spegesild</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">21</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">8</d:CategoryID>
+        <d:QuantityPerUnit>4 - 450 g glasses</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">12.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">95</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">0</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(47)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(47)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(47)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(47)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(47)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">47</d:ProductID>
+        <d:ProductName>Zaanse koeken</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">22</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">3</d:CategoryID>
+        <d:QuantityPerUnit>10 - 4 oz boxes</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">9.50</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">36</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">0</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(48)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(48)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(48)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(48)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(48)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">48</d:ProductID>
+        <d:ProductName>Chocolade</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">22</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">3</d:CategoryID>
+        <d:QuantityPerUnit>10 pkgs.</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">12.75</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">15</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">70</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">25</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(49)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(49)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(49)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(49)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(49)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">49</d:ProductID>
+        <d:ProductName>Maxilaku</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">23</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">3</d:CategoryID>
+        <d:QuantityPerUnit>24 - 50 g pkgs.</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">20.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">10</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">60</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">15</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(50)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(50)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(50)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(50)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(50)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">50</d:ProductID>
+        <d:ProductName>Valkoinen suklaa</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">23</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">3</d:CategoryID>
+        <d:QuantityPerUnit>12 - 100 g bars</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">16.25</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">65</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">30</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(51)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(51)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(51)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(51)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(51)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">51</d:ProductID>
+        <d:ProductName>Manjimup Dried Apples</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">24</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">7</d:CategoryID>
+        <d:QuantityPerUnit>50 - 300 g pkgs.</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">53.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">20</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">10</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(52)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(52)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(52)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(52)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(52)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">52</d:ProductID>
+        <d:ProductName>Filo Mix</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">24</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">5</d:CategoryID>
+        <d:QuantityPerUnit>16 - 2 kg boxes</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">7.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">38</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">25</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(53)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(53)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(53)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(53)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(53)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">53</d:ProductID>
+        <d:ProductName>Perth Pasties</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">24</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">6</d:CategoryID>
+        <d:QuantityPerUnit>48 pieces</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">32.80</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">0</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">0</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">true</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(54)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(54)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(54)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(54)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(54)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">54</d:ProductID>
+        <d:ProductName>Tourtière</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">25</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">6</d:CategoryID>
+        <d:QuantityPerUnit>16 pies</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">7.45</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">21</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">10</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(55)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(55)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(55)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(55)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(55)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">55</d:ProductID>
+        <d:ProductName>Pâté chinois</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">25</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">6</d:CategoryID>
+        <d:QuantityPerUnit>24 boxes x 2 pies</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">24.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">115</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">20</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(56)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(56)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(56)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(56)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(56)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">56</d:ProductID>
+        <d:ProductName>Gnocchi di nonna Alice</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">26</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">5</d:CategoryID>
+        <d:QuantityPerUnit>24 - 250 g pkgs.</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">38.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">21</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">10</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">30</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(57)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(57)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(57)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(57)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(57)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">57</d:ProductID>
+        <d:ProductName>Ravioli Angelo</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">26</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">5</d:CategoryID>
+        <d:QuantityPerUnit>24 - 250 g pkgs.</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">19.50</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">36</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">20</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(58)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(58)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(58)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(58)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(58)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">58</d:ProductID>
+        <d:ProductName>Escargots de Bourgogne</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">27</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">8</d:CategoryID>
+        <d:QuantityPerUnit>24 pieces</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">13.25</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">62</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">20</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(59)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(59)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(59)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(59)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(59)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">59</d:ProductID>
+        <d:ProductName>Raclette Courdavault</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">28</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">4</d:CategoryID>
+        <d:QuantityPerUnit>5 kg pkg.</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">55.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">79</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">0</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(60)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(60)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(60)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(60)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(60)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">60</d:ProductID>
+        <d:ProductName>Camembert Pierrot</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">28</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">4</d:CategoryID>
+        <d:QuantityPerUnit>15 - 300 g rounds</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">34.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">19</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">0</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(61)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(61)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(61)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(61)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(61)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">61</d:ProductID>
+        <d:ProductName>Sirop d'érable</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">29</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">2</d:CategoryID>
+        <d:QuantityPerUnit>24 - 500 ml bottles</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">28.50</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">113</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">25</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(62)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(62)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(62)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(62)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(62)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">62</d:ProductID>
+        <d:ProductName>Tarte au sucre</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">29</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">3</d:CategoryID>
+        <d:QuantityPerUnit>48 pies</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">49.30</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">17</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">0</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(63)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(63)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(63)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(63)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(63)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">63</d:ProductID>
+        <d:ProductName>Vegie-spread</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">7</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">2</d:CategoryID>
+        <d:QuantityPerUnit>15 - 625 g jars</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">43.90</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">24</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">5</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(64)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(64)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(64)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(64)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(64)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">64</d:ProductID>
+        <d:ProductName>Wimmers gute Semmelknödel</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">12</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">5</d:CategoryID>
+        <d:QuantityPerUnit>20 bags x 4 pieces</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">33.25</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">22</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">80</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">30</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(65)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(65)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(65)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(65)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(65)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">65</d:ProductID>
+        <d:ProductName>Louisiana Fiery Hot Pepper Sauce</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">2</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">2</d:CategoryID>
+        <d:QuantityPerUnit>32 - 8 oz bottles</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">21.05</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">76</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">0</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(66)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(66)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(66)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(66)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(66)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">66</d:ProductID>
+        <d:ProductName>Louisiana Hot Spiced Okra</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">2</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">2</d:CategoryID>
+        <d:QuantityPerUnit>24 - 8 oz jars</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">17.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">4</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">100</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">20</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(67)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(67)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(67)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(67)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(67)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">67</d:ProductID>
+        <d:ProductName>Laughing Lumberjack Lager</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">16</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">1</d:CategoryID>
+        <d:QuantityPerUnit>24 - 12 oz bottles</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">14.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">52</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">10</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(68)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(68)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(68)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(68)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(68)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">68</d:ProductID>
+        <d:ProductName>Scottish Longbreads</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">8</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">3</d:CategoryID>
+        <d:QuantityPerUnit>10 boxes x 8 pieces</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">12.50</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">6</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">10</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">15</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(69)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(69)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(69)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(69)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(69)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">69</d:ProductID>
+        <d:ProductName>Gudbrandsdalsost</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">15</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">4</d:CategoryID>
+        <d:QuantityPerUnit>10 kg pkg.</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">36.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">26</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">15</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(70)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(70)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(70)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(70)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(70)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">70</d:ProductID>
+        <d:ProductName>Outback Lager</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">7</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">1</d:CategoryID>
+        <d:QuantityPerUnit>24 - 355 ml bottles</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">15.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">15</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">10</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">30</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(71)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(71)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(71)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(71)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(71)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">71</d:ProductID>
+        <d:ProductName>Flotemysost</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">15</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">4</d:CategoryID>
+        <d:QuantityPerUnit>10 - 500 g pkgs.</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">21.50</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">26</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">0</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(72)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(72)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(72)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(72)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(72)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">72</d:ProductID>
+        <d:ProductName>Mozzarella di Giovanni</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">14</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">4</d:CategoryID>
+        <d:QuantityPerUnit>24 - 200 g pkgs.</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">34.80</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">14</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">0</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(73)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(73)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(73)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(73)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(73)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">73</d:ProductID>
+        <d:ProductName>Röd Kaviar</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">17</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">8</d:CategoryID>
+        <d:QuantityPerUnit>24 - 150 g jars</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">15.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">101</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">5</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(74)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(74)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(74)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(74)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(74)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">74</d:ProductID>
+        <d:ProductName>Longlife Tofu</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">4</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">7</d:CategoryID>
+        <d:QuantityPerUnit>5 kg pkg.</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">10.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">4</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">20</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">5</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(75)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(75)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(75)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(75)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(75)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">75</d:ProductID>
+        <d:ProductName>Rhönbräu Klosterbier</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">12</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">1</d:CategoryID>
+        <d:QuantityPerUnit>24 - 0.5 l bottles</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">7.75</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">125</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">25</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(76)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(76)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(76)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(76)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(76)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">76</d:ProductID>
+        <d:ProductName>Lakkalikööri</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">23</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">1</d:CategoryID>
+        <d:QuantityPerUnit>500 ml</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">18.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">57</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">20</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products(77)</id>
+    <title type="text"></title>
+    <updated>2015-09-02T03:40:08Z</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="Product" href="Products(77)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="Products(77)/Category" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Order_Details" type="application/atom+xml;type=feed" title="Order_Details" href="Products(77)/Order_Details" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Supplier" type="application/atom+xml;type=entry" title="Supplier" href="Products(77)/Supplier" />
+    <category term="SampleModel.Product" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ProductID m:type="Edm.Int32">77</d:ProductID>
+        <d:ProductName>Original Frankfurter grüne Soße</d:ProductName>
+        <d:SupplierID m:type="Edm.Int32">12</d:SupplierID>
+        <d:CategoryID m:type="Edm.Int32">2</d:CategoryID>
+        <d:QuantityPerUnit>12 boxes</d:QuantityPerUnit>
+        <d:UnitPrice m:type="Edm.Decimal">13.00</d:UnitPrice>
+        <d:UnitsInStock m:type="Edm.Int16">32</d:UnitsInStock>
+        <d:UnitsOnOrder m:type="Edm.Int16">0</d:UnitsOnOrder>
+        <d:ReorderLevel m:type="Edm.Int16">15</d:ReorderLevel>
+        <d:Discontinued m:type="Edm.Boolean">false</d:Discontinued>
+      </m:properties>
+    </content>
+  </entry>
+</feed>

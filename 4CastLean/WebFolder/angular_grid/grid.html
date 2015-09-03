@@ -4,140 +4,48 @@
     <title></title>
     <link rel="stylesheet" href="/css/kendo/kendo.common.min.css" />
     <link rel="stylesheet" href="/css/kendo/kendo.default.min.css" />
+	<link rel="stylesheet" href="/css/kendo/kendo.common-material.min.css">
+      	<link rel="stylesheet" href="/css/kendo/kendo.rtl.min.css">
+		<link rel="stylesheet" href="/css/kendo/kendo.material.min.css">
+		<link rel="stylesheet" href="/css/kendo/kendo.dataviz.min.css">
+		<link rel="stylesheet" href="/css/kendo/kendo.dataviz.material.min.css">
+		<link rel="stylesheet" href="/css/kendo/kendo-custom-styles.css">
 
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/angular/angular.min.js"></script>
 	<script src="/bower_components/angular-wakanda/angular-wakanda.min.js"></script>
     <script src="/js/kendo/kendo.all.min.js"></script>
+	<script src="./scripts/main.js"></script>
+
+<style>
+	body{
+		font-family: Helvetica;
+		font-size: 11px;
+	}
+</style>
 </head>
-<body  ng-app="KendoDemos">
+<body  ng-app="KendoDemos" 
+>
 
 
 <div id="example" ng-controller="MyController">
 
-		<p>angular-wakanda <strong>{{loaded}}</strong></p>
-		<p>angular-wakanda <strong>{{initialized}}</strong></p>
-		<p>{{projects.$totalCount}} projects found</p>
-		<p>{{gridColumns}}</p>
-		<p>Grid Data: {{gridData}}</p>
-		<!--<p>{{projects[0]}}</p>-->
-
-		<ul>
-		  <li ng-repeat="project in projects">{{ project.projectName }}</li>
-		</ul>
-
+<!--		<p>angular-wakanda <strong>{{loaded}}</strong></p>-->
+<!--		<p>angular-wakanda <strong>{{initialized}}</strong></p>-->
+<!--		<p>{{projects.$totalCount}} projects found</p>-->
+<!--		<p>Grid options: {{customOptions.dataSource}}</p>-->
+		
+<!--		 <select kendo-drop-down-list k-options="customOptions" k-ng-delay="customOptions.dataSource"></select>-->
+			<div id="grid" kendo-grid="projectsGrid" k-options="customOptions" k-rebind="customOptions"></div>
 		<!--    <div ng-controller="MyCtrl">-->
-		        <div id="grid" kendo-grid
-		         k-data-source="projects"
-		         k-columns="gridColumns"
-		         k-selectable="true"
-		         k-on-change="selected = data">
-		</div>
-</div>
+<!--		       <div id="grid" kendo-grid k-options="gridOptions" k-ng-delay="gridOptions.dataSource.options.data"></div>-->
+
 
 <script>
 
-   var app = angular.module("KendoDemos", [ "kendo.directives", "wakanda" ]);
-      
-	app.controller("MyController", function ($scope, $wakanda) {
-   		$scope.loaded = !!$wakanda ? 'loaded' : 'not loaded';
-		$scope.initialized = 'not initialized';
-		$scope.projects = [];		
-		$scope.gridColumns = [];
-
-		
-  $scope.gridColumns = [
-    { field: "artist", title: "Artist" },
-    { field: "track", title: "Track" }
-  ];
-		$wakanda.init().then(function oninit(ds) {
-
-	 		$scope.initialized = 'initialized';
-	        // feed the angular scope with the stored data of the Country DataClass
-	       
-			
 	
 
-   		 });
-
-		 $scope.projects = $wakanda.$ds.project.$find();
- 		
-		
-		
-		
-
-	});
-
-<!--		var projectsDataSource = new kendo.data.DataSource({-->
-<!--                        data: $scope.projects-->
-<!--                        }-->
-<!--                    );-->
-
-
-
-
-
-
-	app.controller("MyCtrl", function($scope){
-            $scope.mainGridOptions = {
-                dataSource: {
-                    type: "odata",
-                    transport: {
-                        read: "//demos.telerik.com/kendo-ui/service/Northwind.svc/Employees"
-                    },
-                    pageSize: 5,
-                    serverPaging: true,
-                    serverSorting: true
-                },
-                sortable: true,
-                pageable: true,
-                dataBound: function() {
-                    this.expandRow(this.tbody.find("tr.k-master-row").first());
-                },
-                columns: [{
-                    field: "FirstName",
-                    title: "First Name",
-                    width: "120px"
-                    },{
-                    field: "LastName",
-                    title: "Last Name",
-                    width: "120px"
-                    },{
-                    field: "Country",
-                    width: "120px"
-                    },{
-                    field: "City",
-                    width: "120px"
-                    },{
-                    field: "Title"
-                }]
-            };
-
-            $scope.detailGridOptions = function(dataItem) {
-                return {
-                    dataSource: {
-                        type: "odata",
-                        transport: {
-                            read: "//demos.telerik.com/kendo-ui/service/Northwind.svc/Orders"
-                        },
-                        serverPaging: true,
-                        serverSorting: true,
-                        serverFiltering: true,
-                        pageSize: 5,
-                        filter: { field: "EmployeeID", operator: "eq", value: dataItem.EmployeeID }
-                    },
-                    scrollable: false,
-                    sortable: true,
-                    pageable: true,
-                    columns: [
-                    { field: "OrderID", title:"ID", width: "56px" },
-                    { field: "ShipCountry", title:"Ship Country", width: "110px" },
-                    { field: "ShipAddress", title:"Ship Address" },
-                    { field: "ShipName", title: "Ship Name", width: "190px" }
-                    ]
-                };
-            };
-        })
+ 
 </script>
 
 
