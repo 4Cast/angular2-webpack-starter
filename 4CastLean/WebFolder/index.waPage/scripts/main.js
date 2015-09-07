@@ -30,11 +30,21 @@
 //       });
 //   }]);
 
+
+
  var app = angular.module("myApp", ["kendo.directives", "wakanda", "ngRoute"])
 
-             app.controller("MyController", function($scope, $wakanda) {
 
-                $scope.greeting = "Hello";
+             app.controller("MyController", function($scope) {
+
+                $scope.greeting = "Bonjour";
+                $scope.path = "We are here";
+                
+            });
+            
+             app.controller("projectsController", function($scope, $wakanda) {
+
+                $scope.greeting = "Bonjour";
                 $scope.path = "We are here";
 
                 $wakanda.init().then(function oninit(ds) {
@@ -60,8 +70,9 @@
 
             app.config(['$routeProvider', function($routeProvider) {
                 $routeProvider
-                	.when('/simple-angular.html', {
-                    template: "<div><h2>Route</h2></div>"
+                	.when('/', {
+                    templateUrl: "views/projects/projectsList.html",
+                    controller: "projectsController"
                     
                 	})
                 	.otherwise({
