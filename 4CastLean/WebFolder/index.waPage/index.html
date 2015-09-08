@@ -19,6 +19,7 @@
         <script src="/bower_components/angular-wakanda/angular-wakanda.min.js"></script>
         <script src="/js/kendo/kendo.all.min.js"></script>
 		<script src="/index/scripts/main.js"></script>
+		<base href="/">
         <style>
             body{
             				font-family: Helvetica;
@@ -32,7 +33,7 @@
             <h1>Header</h1>
         </header>
         <div id="example" ng-controller="MyController">
-            <p>Greeting: {{greeting}}</p>
+           
             <div ng-view></div>
             <!-- <div id="grid" kendo-grid="projectsGrid" k-options="customOptions"
             k-rebind="customOptions"></div>-->
