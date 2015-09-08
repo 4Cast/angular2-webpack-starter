@@ -40,11 +40,8 @@
                 $scope.greeting = "Bonjour";               
                 
                  $wakanda.init().then(function oninit(ds) {
-                                    $scope.projects = ds.project.$find();
-                                    $scope.customOptions.dataSource = new kendo.data.DataSource({
-                                        data: $scope.projects
-                                    });
-                
+                                   $scope.projects = ds.project.$find({pageSize: 200});
+                                                
                                 });
                 
             });
@@ -52,6 +49,7 @@
              app.controller("projectsController", function($scope, $wakanda, $location) {               
 				
 				$scope.greeting = "Hello";
+				debugger;
 								
                 $scope.customOptions = {
                 	dataSource: new kendo.data.DataSource({
@@ -72,11 +70,17 @@
                 
             });
             
-            app.controller("detailController", function($scope, $location){
-            	$scope.project = {projectName:"", projectNumber:""}
+            app.controller("detailController", function($scope, $wakanda, $location){
             	
-            	$scope.save = function(){
-            		$scope.projects.push($scope.project);
+            	$scope.newProject = { };
+            	$scope.save = function(newProject){
+            		
+            		var newEntity = $wakanda.$ds.project.$create(newProject);
+            		debugger;
+            		newEntity.$save().then(function(e){
+            		            $scope.projects = $wakanda.$ds.project.$find({pageSize: 200});
+            		        });
+            		//$scope.projects.push($scope.project);
             		$location.path("/")
             	}
             
@@ -91,6 +95,11 @@
                     templateUrl: "/views/projects/projectsList.html",
                     controller: "projectsController"
                     
+                	})
+                	.when('/index.html', {
+                	templateUrl: "/views/projects/projectsList.html",
+                	controller: "projectsController"
+                	
                 	})
                 	.when('/new', {
                 		templateUrl: "/views/projects/projectDetail.html",

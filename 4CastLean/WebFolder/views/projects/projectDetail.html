@@ -1,7 +1,6 @@
-<p>{{greeting}}</p>
-<p>{{projects}}</p>
 <form>
-	<input ng-model="project.projectName"/>
-	<input ng-model="project.projectNumber"/>
-	<button ng-click="save()" class="k-button">Save</button>
+	<input ng-model="newProject.projectNumber" placeholder="Project Number"/>
+	<input ng-model="newProject.projectName" placeholder="Project Name"/>
+	
+	<button ng-click="save(newProject)" class="k-button">Save</button>
 </form>
