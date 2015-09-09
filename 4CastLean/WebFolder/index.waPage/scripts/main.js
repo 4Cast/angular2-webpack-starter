@@ -53,9 +53,14 @@
 								
                 $scope.customOptions = {
                 	dataSource: new kendo.data.DataSource({
-                	    data: $scope.projects
+                	    data: $scope.projects,
+                	    pageSize: 40
                 	}),
-                	
+                	pageable: {
+                	                   refresh: true,
+                	                   pageSizes: true,
+                	                   buttonCount: 5
+                	               },
                     dataTextField: "projectName",
                     dataValueField: "projectNumber",
                     columns: [{
