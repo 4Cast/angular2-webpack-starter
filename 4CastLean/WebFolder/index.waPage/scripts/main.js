@@ -49,13 +49,16 @@
              app.controller("projectsController", function($scope, $wakanda, $location) {               
 				
 				$scope.greeting = "Hello";
-				debugger;
+			
 								
                 $scope.customOptions = {
                 	dataSource: new kendo.data.DataSource({
                 	    data: $scope.projects,
                 	    pageSize: 40
                 	}),
+                	change: onChange,
+                	sortable: true,
+                	selectable: true,
                 	pageable: {
                 	                   refresh: true,
                 	                   pageSizes: true,
@@ -72,6 +75,12 @@
                     }]
                 };
                 
+               function onChange(e){
+                	var x = 1;
+                	debugger;
+                
+                	$location.path("/new");              
+                }
                 
             });
             
