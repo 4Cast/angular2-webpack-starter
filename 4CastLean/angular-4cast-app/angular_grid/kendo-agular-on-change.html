@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>kendo-agular-on-change</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/angular/angular.min.js"></script>
+	<script src="/bower_components/angular-wakanda/angular-wakanda.min.js"></script>
+    <script src="/js/kendo/kendo.all.min.js"></script>
+    </head>
+    <body>
+        <div ng-app="app" ng-controller="MyCtrl">
+  <label>Select mode: <select kendo-dropdownlist ng-model="gridOptions.selectable">
+    <option value="row">Row</option>
+    <option value="cell">Cell</option>
+    <option value="multiple, row">Multiple, row</option>
+    <option value="multiple, cell">Multiple, cell</option>
+  </select></label>
+
+  <div kendo-grid k-options="gridOptions" k-rebind="gridOptions.selectable"
+       k-on-change="handleChange(data, dataItem, columns)"></div>
+  <pre>
+  data: {{ data | json }}
+  columns: {{ columns | json }}
+  <span ng-show="gridOptions.selectable == 'row' || gridOptions.selectable == 'cell'">DataItem: {{ dataItem | json }}</span>
+  </pre>
+</div>
+<script>
+  angular.module("app", ["kendo.directives"]).controller("MyCtrl", function($scope) {
+    var data = new kendo.data.DataSource({
+      data: [
+        { text: "Foo", id: 1 },
+        { text: "Bar", id: 2 },
+        { text: "Baz", id: 3 }
+      ]
+    });
+    $scope.handleChange = function(data, dataItem, columns) {
+      $scope.data = data;
+      $scope.columns = columns;
+      $scope.dataItem = dataItem;
+    };
+    $scope.gridOptions = {
+      dataSource: data,
+      selectable: "row",
+      columns: [
+        { field: "text", title: "Text" },
+        { field: "id", title: "Id" }
+      ]
+    };
+  });
+</script>
+    </body>
+</html>
