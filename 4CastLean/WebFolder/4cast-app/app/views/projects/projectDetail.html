@@ -1,0 +1,35 @@
+
+
+<div class="container">
+<h2>Project Detail</h2>
+   
+
+<form class="form-horizontal" role="form">
+	<div class="form-group" >
+	 	<label class="control-label col-sm-3" for="projectNumber">Project Number:</label>
+		 <div class="col-sm-9">
+			<input class="form-control" id="projectNumber" ng-model="project.projectNumber" placeholder="Project Number"/>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="control-label col-sm-3" for="projectName">Project Name:</label>
+		<div class="col-sm-9">
+			<input class="form-control" id="projectName" ng-model="project.projectName" placeholder="Project Name"/>
+		</div>
+	</div>
+	
+	<div class="form-group">        
+	      <div class="col-sm-offset-3 col-sm-9">
+	      <button ng-click="cancelDetail()" class="btn btn-default">Cancel</button>
+	      <button ng-click="saveProject()" class="btn btn-primary">Save</button>
+	        
+	      </div>
+	    </div>
+	
+	<!--<div class="form-group"> 
+		<div class="col-sm-offset-2 col-sm-10">
+			
+		</div>
+	</div>-->
+</form>
+</div>
