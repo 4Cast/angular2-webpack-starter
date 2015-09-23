@@ -1,0 +1,1 @@
+﻿function doImport () { 	 	 	var jsonString = loadText( ds.getModelFolder().path + "Import/scnt.txt" ); 	ds.subcontract.importJSON(jsonString);   }doImport();
