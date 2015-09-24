@@ -7,7 +7,7 @@
         <div class="list-group" style="height: 100%; overflow: scroll;;"> 
         <div ng-repeat="project in projects">
         
-                <a href="#" ng-click="selectForProject()" class="list-group-item" style="height: 15%; overflow: hidden;">
+                <a href="#" ng-click="selectForProject(project)" class="list-group-item" style="height: 15%; overflow: hidden;">
                     <h4 class="list-group-item-heading">{{project.projectNumber}}</h4>
                     <p class="list-group-item-text">{{project.projectName}}</p>
                 </a>

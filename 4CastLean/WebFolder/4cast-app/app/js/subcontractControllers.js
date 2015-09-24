@@ -3,9 +3,10 @@
 /* Subcontract Controllers */
 
 fourcastApp.controller("subcontractsController", function($scope, $rootScope, $location, $state, $wakanda) {
-
+	debugger;
 	$wakanda.init().then(function oninit(ds) {
 	
+		$scope.ds = ds;
 		$scope.projects = ds.project.$find({pageSize: 200});		
 		$scope.subcontracts = ds.scnt.$find({pageSize: 200});
 		$scope.subcontracts.$promise.then(function(){
@@ -17,14 +18,15 @@ fourcastApp.controller("subcontractsController", function($scope, $rootScope, $l
 				
 		});
 		
+		$scope.selectForProject = function selectForProject(e){
+				debugger;
+				//$state.go('projects.list');		
+			}
+		
+		
 	});
 		
-	
-	$scope.selectForProject = function selectForProject({
-		debugger;
-		x = 1;
-	});
-	
+			
 	$scope.dataSource = {};
 	
 	$scope.mainGridOptions = {
