@@ -3,13 +3,28 @@
 	"toJSON" : true,
 	"extraProperties" : 
 	{
-		"version" : "1",
+		"version" : "2",
 		"classes" : 
 		{
+			"scnt" : 
+			{
+				"panelColor" : "#996699",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"position" : 
+					{
+						"X" : 25,
+						"Y" : 20
+					}
+				}
+			}
 		},
 		"model" : 
 		{
-			"scriptMode" : "manual"
+			"scriptMode" : "manual",
+			"workspaceLeft" : 0,
+			"workspaceTop" : 0
 		}
 	},
 	"dataClasses" : 
@@ -33,23 +48,375 @@
 					"indexKind" : "btree"
 				},
 				{
-					"name" : "costCodeNumber",
+					"name" : "number",
 					"kind" : "storage",
 					"scope" : "public",
 					"type" : "long"
 				},
 				{
-					"name" : "costCodeName",
+					"name" : "name",
 					"kind" : "storage",
 					"scope" : "public",
 					"type" : "string"
 				},
 				{
-					"name" : "costCodeProject",
+					"name" : "project",
 					"kind" : "relatedEntity",
 					"scope" : "public",
 					"type" : "project",
 					"path" : "project"
+				},
+				{
+					"name" : "amt_budgetOriginal_int",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "long64"
+				},
+				{
+					"name" : "amt_budgetOriginal",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript"
+				},
+				{
+					"name" : "amt_scntOriginal",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "$mainModel.costCode.amt_scntOriginal.onGet",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "amt_scntVariations",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "$mainModel.costCode.amt_scntVariations.onGet",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "amt_approvedVariations",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "$mainModel.costCode.amt_approvedVariations.onGet",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "amt_reallocations",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "$mainModel.costCode.amt_reallocations.onGet",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "amt_budgetRevised",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "$mainModel.costCode.amt_budgetRevised.onGet",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "amt_forecasts",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript"
+				},
+				{
+					"name" : "amt_variance",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "$mainModel.costCode.amt_variance.onGet",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "amt_supplierCosts",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "$mainModel.costCode.amt_supplierCosts.onGet",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "amt_employeeCosts",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript"
+				},
+				{
+					"name" : "amt_otherCosts",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript"
+				},
+				{
+					"name" : "amt_totalCosts",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript"
+				},
+				{
+					"name" : "amt_totalCommitted",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "$mainModel.costCode.amt_totalCommitted.onGet",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "amt_costToComplete",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "$mainModel.costCode.amt_costToComplete.onGet",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "amt_budgetOriginal_num",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "number",
+					"scriptKind" : "javascript"
+				},
+				{
+					"name" : "amt_scntOriginal_num",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "number",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "$mainModel.costCode.amt_scntOriginal_num.onGet",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "amt_scntVariations_num",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "number",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "$mainModel.costCode.amt_scntVariations_num.onGet",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "amt_approvedVariations_num",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "number",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "$mainModel.costCode.amt_approvedVariations_num.onGet",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "amt_reallocations_num",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "number",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "$mainModel.costCode.amt_reallocations_num.onGet",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "amt_budgetRevised_num",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "number",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "$mainModel.costCode.amt_budgetRevised_num.onGet",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "amt_forecasts_num",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "number",
+					"scriptKind" : "javascript"
+				},
+				{
+					"name" : "amt_variance_num",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "number",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "$mainModel.costCode.amt_variance_num.onGet",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "amt_supplierCosts_num",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "number",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "$mainModel.costCode.amt_supplierCosts_num.onGet",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "amt_employeeCosts_num",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "number",
+					"scriptKind" : "javascript"
+				},
+				{
+					"name" : "amt_otherCosts_num",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "number",
+					"scriptKind" : "javascript"
+				},
+				{
+					"name" : "amt_totalCosts_num",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "number",
+					"scriptKind" : "javascript"
+				},
+				{
+					"name" : "amt_totalCommitted_num",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "number",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "$mainModel.costCode.amt_totalCommitted_num.onGet",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "amt_costToComplete_num",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "number",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "$mainModel.costCode.amt_costToComplete_num.onGet",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "groupNumber",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "long",
+					"scriptKind" : "javascript"
+				},
+				{
+					"name" : "groupName",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript"
+				}
+			],
+			"methods" : 
+			[
+				{
+					"name" : "importJSON",
+					"applyTo" : "dataClass",
+					"scope" : "publicOnServer",
+					"from" : "$mainModel.costCode.methods.importJSON",
+					"userDefined" : true
 				}
 			],
 			"key" : 
@@ -108,12 +475,104 @@
 					"type" : "string"
 				},
 				{
-					"name" : "projectCostCodes",
+					"name" : "costCodes",
 					"kind" : "relatedEntities",
 					"scope" : "public",
 					"type" : "costCodes",
 					"reversePath" : true,
-					"path" : "costCodeProject"
+					"path" : "project"
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "id"
+				}
+			]
+		},
+		{
+			"name" : "scnt",
+			"className" : "scnt",
+			"collectionName" : "scnts",
+			"scope" : "public",
+			"noEdit" : true,
+			"noSave" : true,
+			"attributes" : 
+			[
+				{
+					"name" : "id",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"autogenerate" : true,
+					"type" : "uuid",
+					"indexKind" : "btree"
+				},
+				{
+					"name" : "subcontractNumber",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "long"
+				},
+				{
+					"name" : "subcontractNumberWithProject",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript"
+				},
+				{
+					"name" : "dateContract",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "date",
+					"simpleDate" : true
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "id"
+				}
+			]
+		},
+		{
+			"name" : "subcontract",
+			"className" : "subcontract",
+			"collectionName" : "subcontracts",
+			"scope" : "public",
+			"noEdit" : true,
+			"noSave" : true,
+			"attributes" : 
+			[
+				{
+					"name" : "id",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"autogenerate" : true,
+					"type" : "uuid",
+					"indexKind" : "btree"
+				},
+				{
+					"name" : "subcontractNumber",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "long"
+				},
+				{
+					"name" : "subcontractNumberWithProject",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript"
+				},
+				{
+					"name" : "dateContract",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "date",
+					"simpleDate" : true
 				}
 			],
 			"key" : 

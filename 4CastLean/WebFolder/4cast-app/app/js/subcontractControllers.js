@@ -3,10 +3,11 @@
 /* Subcontract Controllers */
 
 fourcastApp.controller("subcontractsController", function($scope, $rootScope, $location, $state, $wakanda) {
-	
+
 	$wakanda.init().then(function oninit(ds) {
-				
-		$scope.subcontracts = ds.subcontract.$find({pageSize: 200});
+	
+		$scope.projects = ds.project.$find({pageSize: 200});		
+		$scope.subcontracts = ds.scnt.$find({pageSize: 200});
 		$scope.subcontracts.$promise.then(function(){
 			$scope.dataSource = new kendo.data.DataSource({
 				pageSize: 20,
@@ -17,12 +18,15 @@ fourcastApp.controller("subcontractsController", function($scope, $rootScope, $l
 		});
 		
 	});
+		
 	
-	
+	$scope.selectForProject = function selectForProject({
+		debugger;
+		x = 1;
+	});
 	
 	$scope.dataSource = {};
 	
-
 	$scope.mainGridOptions = {
 		dataSource: $scope.dataSource,
 		change: onChange,
@@ -33,15 +37,17 @@ fourcastApp.controller("subcontractsController", function($scope, $rootScope, $l
 		                   pageSizes: true,
 		                   buttonCount: 5
 		               },
-	    dataValueField: "subcontractNumber",
+
 	   
 	    columns: [{
 	        field: "subcontractNumber",
 	        title: "Number"
-	    }, {
+	    }
+	  , {
 	        field: "dateContract",
-	        title: "Contract Date"
-	    }]
+	       title: "Contract Date"
+	 }
+	    ]
 	};
 	function onChange(e){
 	 	var x = 1;
