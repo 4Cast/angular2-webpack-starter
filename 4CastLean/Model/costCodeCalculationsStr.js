@@ -10,6 +10,7 @@
 //
 // Approved Variations ////////////////////////////////////
 //
+var multiplier = 100000;
 
 
 model.costCode.amt_approvedVariations.onGet = function(){
@@ -223,8 +224,9 @@ model.costCode.amt_variance.onGet = function (){
 model.costCode.amt_supplierCosts.onGet = function(){
 	
 	var thePayments = this.supplierPayments;
-	var approvedPayments = thePayments.query("isApproved == true");
-	var value = approvedPayments.sum("thisApprovedAmount_int")/multiplier;
+	var value = 0;
+	//var approvedPayments = thePayments.query("isApproved == true");
+	//var value = approvedPayments.sum("thisApprovedAmount_int")/multiplier;
 	return utilities.roundToTwo(value);
 	
 }

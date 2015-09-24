@@ -57,6 +57,22 @@ fourcastApp.config(function($stateProvider, $urlRouterProvider) {
           templateUrl: 'views/projects/projectDetail.html',
           controller: 'projectDetailController'
         })
+        
+      $stateProvider
+          .state('subcontracts', {
+            url: '/subcontracts',
+            templateUrl: 'views/subcontracts/subcontractsContainer.html'
+      
+          })  
+          
+      $stateProvider
+          .state('subcontracts.list', {
+            url: '/list',
+            templateUrl: 'views/subcontracts/subcontractsList.html',
+            controller: 'subcontractsController'
+      
+          })  
+    
 });
 
 fourcastApp.config(function(RestangularProvider){

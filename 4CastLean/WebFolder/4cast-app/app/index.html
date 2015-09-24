@@ -2,7 +2,7 @@
 <html lang="en" ng-app="fourcastApp">
 <head>
   <meta charset="utf-8">
-  <title>Google Phone Gallery</title>
+  <title>4Cast Project Cost Control</title>
   <link rel="stylesheet" href="css/kendo/kendo.common.min.css" />
   <link rel="stylesheet" href="css/kendo/kendo.default.min.css" />
   <link rel="stylesheet" href="css/kendo/kendo.common-material.min.css">
@@ -25,7 +25,8 @@
     
   <script src="js/kendo/kendo.all.min.js"></script>
   <script src="js/mainController.js"></script>
-  <script src="js/controllers.js"></script>
+  <script src="js/projectControllers.js"></script>
+ <script src="js/subcontractControllers.js"></script>
  
   
 </head>
@@ -36,6 +37,7 @@
     </div>
     <ul class="nav navbar-nav">
         <li><a ui-sref="projects.list">Projects</a></li>
+        <li><a ui-sref="subcontracts.list">Subcontracts</a></li>
         <li><a ui-sref="about">About</a></li>
     </ul>
 </nav>
