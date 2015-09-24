@@ -1,5 +1,5 @@
 
-model.scnt = new DataClass("scnts", "public");
+model.scnt = new DataClass("scntCollection", "public");
 
 
 
@@ -8,6 +8,8 @@ model.scnt.subcontractNumber = new Attribute("storage","long");
 model.scnt.subcontractNumberWithProject = new Attribute("calculated","string");
 
 model.scnt.dateContract = new Attribute("storage","date");
+model.subcontract.subcontractProject = new Attribute("relatedEntity","project","project");
+model.snct.subcontractCostCode = new Attribute('relatedEntity', 'costCode', 'costCode');
 
 model.scnt.methods.importJSON = function(jsonString){
 	
