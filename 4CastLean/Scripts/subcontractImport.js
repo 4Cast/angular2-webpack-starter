@@ -1,1 +1,1 @@
-﻿function doImport () { 	 	debugger; 	var jsonString = loadText( ds.getModelFolder().path + "Import/scnt.txt" ); 	ds.scnt.importJSON(jsonString);   }doImport();
+﻿function doImport () { 	 	 	var jsonString = loadText( ds.getModelFolder().path + "Import/scnt.txt" ); 	ds.scnt.importJSON(jsonString);   }doImport();

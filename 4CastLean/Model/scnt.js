@@ -8,11 +8,13 @@ model.scnt.subcontractNumber = new Attribute("storage","long");
 model.scnt.subcontractNumberWithProject = new Attribute("calculated","string");
 
 model.scnt.dateContract = new Attribute("storage","date");
-model.subcontract.subcontractProject = new Attribute("relatedEntity","project","project");
+model.subcontract.amt_contractOriginal_int = new Attribute("storage","long64");
+
+model.scnt.subcontractProject = new Attribute("relatedEntity","project","project");
 model.snct.subcontractCostCode = new Attribute('relatedEntity', 'costCode', 'costCode');
 
 model.scnt.methods.importJSON = function(jsonString){
-	
+	debugger;
 	ds.scnt.all().remove();
     
         
@@ -29,7 +31,7 @@ model.scnt.methods.importJSON = function(jsonString){
 var multiplier =100000;
 
 function createSubcontract(theObject){
-	
+		
 	 		var theProject = ds.project.find('id == :1', theObject.uid_project);
 		    var theCostCode = ds.costCode.find('id == :1', theObject.uid_ccod);
 		    //var theContact = ds.supplierContact.find('id == :1', theObject.uid_scct);
@@ -47,7 +49,7 @@ function createSubcontract(theObject){
 				     	dateContract					: theObject.date_contract,
 //				     	dateCommence					: theObject.date_commenced,
 //				     	dateComplete					: theObject.date_completed,
-//				     	amt_contractOriginal_int		: theObject.amt_contractOriginal *multiplier,
+				     	amt_contractOriginal_int		: theObject.amt_contractOriginal *multiplier,
 //				     	amt_contractOriginalGross_int	: theObject.amt_contractOriginalGross*multiplier,
 //				     	amt_contractOriginalTax_int		: theObject.amt_contractOriginalTax*multiplier,
 //				     	security_isNoSecurity			: theObject.security_isNoSecurity,
@@ -65,8 +67,8 @@ function createSubcontract(theObject){
 //				     	terms_milestoneDates			: theObject.terms_milestoneDates,
 //				     	terms_paymentTerms				: theObject.terms_paymentTerms,
 //				     	terms_paymentType				: theObject.terms_paymentType,
-//				     	subcontractProject				: theProject,
-//				     	subcontractCostCode				: theCostCode,
+				     	subcontractProject				: theProject
+//				     	subcontractCostCode				: theCostCode
 //				     	contact							: theContact,
 //				     	subcontractTaxCode				: theTaxCode
 				     	
