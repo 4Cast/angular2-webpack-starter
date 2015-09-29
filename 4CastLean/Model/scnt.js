@@ -12,6 +12,8 @@ model.subcontract.amt_contractOriginal_int = new Attribute("storage","long64");
 
 model.scnt.subcontractProject = new Attribute("relatedEntity","project","project");
 model.snct.subcontractCostCode = new Attribute('relatedEntity', 'costCode', 'costCode');
+model.scnt.supplier = new Attribute('relatedEntity', 'supplier', 'supplier');
+model.scnt.supplierName = new Attribute('alias', 'string', 'supplier.companyName');
 
 model.scnt.methods.importJSON = function(jsonString){
 	debugger;
@@ -35,6 +37,7 @@ function createSubcontract(theObject){
 	 		var theProject = ds.project.find('id == :1', theObject.uid_project);
 		    var theCostCode = ds.costCode.find('id == :1', theObject.uid_ccod);
 		    //var theContact = ds.supplierContact.find('id == :1', theObject.uid_scct);
+		    var theSupplier = ds.supplier.find('id == :1', theObject.uid_sctr);
 //		    if(theObject.uid_txra){
 //		   		var theTaxCode = ds.taxCode.find('id == :1', theObject.uid_txra);
 //		   }
@@ -67,10 +70,11 @@ function createSubcontract(theObject){
 //				     	terms_milestoneDates			: theObject.terms_milestoneDates,
 //				     	terms_paymentTerms				: theObject.terms_paymentTerms,
 //				     	terms_paymentType				: theObject.terms_paymentType,
-				     	subcontractProject				: theProject
+				     	subcontractProject				: theProject,
 //				     	subcontractCostCode				: theCostCode
 //				     	contact							: theContact,
 //				     	subcontractTaxCode				: theTaxCode
+						supplier						: theSupplier
 				     	
 				     				
 				     	

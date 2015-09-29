@@ -11,29 +11,27 @@ fourcastApp.controller("subcontractsController", function($scope, $rootScope, $l
 		$scope.subcontracts = ds.scnt.$find({pageSize: 200});
 		
 		$scope.subcontracts.$promise.then(function(){
-					$scope.subcontracts.$fetch().then(function() {
-						
-							$scope.subcontractsArr = [];
-								for(var subcontract of $scope.subcontracts){
-										var elem = {
-											subcontractNumber: subcontract.subcontractNumber,
-											dateContract: subcontract.dateContract,
-											projectNumber: subcontract.subcontractProject.projectNumber
-										}
-										$scope.subcontractsArr.push(elem);																						
-								}
-								
-								$scope.dataSource = new kendo.data.DataSource({
-									pageSize: 20,
-									data: $scope.subcontractsArr
-								});
-								$scope.mainGridOptions.dataSource = $scope.dataSource;
-					
-					
-					});
-												
-							});
+		$scope.total = $scope.subcontracts.$totalCount;
+		$scope.subcontractsArr = []
+		for (var subcontract of $scope.subcontracts){
 		
+			var elem = {
+				subcontractId: subcontract.id,
+				subcontractNumber: subcontract.subcontractNumber,
+				supplierName: subcontract.supplierName
+			
+			}
+			
+			$scope.subcontractsArr.push(elem);
+			
+		
+		}
+			$scope.dataSource = new kendo.data.DataSource({
+			pageSize:20,
+			data: $scope.subcontractsArr});
+			
+		$scope.mainGridOptions.dataSource = $scope.dataSource;
+		});
 					
 							
 		$scope.selectForProject = function selectForProject(theProject){
@@ -42,10 +40,11 @@ fourcastApp.controller("subcontractsController", function($scope, $rootScope, $l
 								//$state.go('projects.list');		
 				$scope.theProject.subcontracts.$fetch().then(function(){
 					$scope.subcontractsArr = [];
-					for(var subcontract of $scope.subcontracts){
+					for(var subcontract of $scope.theProject.subcontracts){
 						var elem = {
 							subcontractNumber: subcontract.subcontractNumber,
-							dateContract: subcontract.dateContract
+							dateContract: subcontract.dateContract,
+							supplierName: subcontract.supplierName
 							}
 						$scope.subcontractsArr.push(elem);
 					}
@@ -85,12 +84,13 @@ fourcastApp.controller("subcontractsController", function($scope, $rootScope, $l
 	       title: "Contract Date"
 	 }, 
 	 {
-	        field: "projectNumber",
-	      	title: "Project Number"
+	        field: "supplierName",
+	      	title: "Supplier"
 	 }
 	    ]
 	};
 	function onChange(e){
+		debugger;
 	 	var x = 1;
 	 		 	var selectedRows = this.select();
 	 	var dataItem = this.dataItem(selectedRows[0]);
@@ -103,6 +103,11 @@ fourcastApp.controller("subcontractsController", function($scope, $rootScope, $l
 //	 	        console.log($location.path());
 //	 	      });
 	 	                }
+	 	                
+	function onDataBound(arg) {
+	debugger;
+	                    kendoConsole.log("Grid data bound");
+	}
 	
 });
 

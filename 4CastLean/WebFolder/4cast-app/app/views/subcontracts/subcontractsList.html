@@ -15,13 +15,13 @@
         </div>
         
       
-            <!--<div ng-repeat="project in projects">
-            	<h4>{{project.projectNumber}}</h4>
-            	<p>{{project.projectName}}</p>
-            </div>-->
         </div>
         <div class="col-lg-10">
-            <kendo-grid id="grid" k-options="mainGridOptions" k-rebind="mainGridOptions"></kendo-grid>
+            <kendo-grid 
+            	id="grid"
+            	k-options="mainGridOptions"
+  
+            	k-rebind="mainGridOptions" ></kendo-grid>
         </div>
     </div>
 </div>
@@ -30,4 +30,5 @@
     <li ng-repeat="project in projects">{{project.projectName}}</li>
 </ul>-->
 <!--<div id="grid" kendo-grid="projectsGrid" k-options="customOptions" k-rebind="customOptions"></div>-->
+<!--k-options="mainGridOptions" k-rebind="mainGridOptions"-->
 

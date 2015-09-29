@@ -15,7 +15,7 @@ model.supplier.methods.importJSON = function(jsonString){
    	
 		    objCollection.forEach( function(theObject) { 
 		    
-		   		createSsupplier(theObject);
+		   		createSupplier(theObject);
 		      
 		  });
 	
@@ -28,6 +28,8 @@ function createSupplier(theObject){
 	 	id:				theObject.uid_sctr,
 	 	companyName:	theObject.companyName
 	 	
-	 }
+	 });
+	 
+	 theSupplier.save();
 }
 
