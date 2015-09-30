@@ -1,3 +1,25 @@
+<h1>Subcontracts List</h1>
+<a ui-sref=".detail" class="btn btn-primary">New Subcontract</a>
 
+<div class="container-fluid" style="height: 600px;">
+    <div class="row" style="height: 100%;">
+        <div class="col-lg-2" style="height: 100%;">
+        <div class="list-group" style="height: 100%; overflow: scroll;;"> 
+        <div ng-repeat="project in projects">
+        
+                <a href="#" ng-click="selectForProject(project)" class="list-group-item" style="height: 15%; overflow: hidden;">
+                    <h4 class="list-group-item-heading">{{project.projectNumber}}</h4>
+                    <p class="list-group-item-text">{{project.projectName}}</p>
+                </a>
+       </div>
+        </div>
+        
+      
+        </div>
+        <div class="col-lg-10">
+            
+        </div>
+    </div>
+</div>
    
 <div ui-view></div>

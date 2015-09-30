@@ -18,6 +18,7 @@ fourcastApp.controller("subcontractsController", function($scope, $rootScope, $l
 			var elem = {
 				subcontractId: subcontract.id,
 				subcontractNumber: subcontract.subcontractNumber,
+				dateContract: subcontract.dateContract,
 				supplierName: subcontract.supplierName
 			
 			}
@@ -42,6 +43,7 @@ fourcastApp.controller("subcontractsController", function($scope, $rootScope, $l
 					$scope.subcontractsArr = [];
 					for(var subcontract of $scope.theProject.subcontracts){
 						var elem = {
+							subcontractId: subcontract.id,
 							subcontractNumber: subcontract.subcontractNumber,
 							dateContract: subcontract.dateContract,
 							supplierName: subcontract.supplierName
@@ -79,15 +81,18 @@ fourcastApp.controller("subcontractsController", function($scope, $rootScope, $l
 	        field: "subcontractNumber",
 	        title: "Number"
 	    }
-	  , {
+	  , 
+	  
+	  {
+	         field: "supplierName",
+	       	title: "Supplier"
+	  },
+	  
+	  {
 	        field: "dateContract",
 	       title: "Contract Date"
 	 }, 
-	 {
-	        field: "supplierName",
-	      	title: "Supplier"
-	 }
-	    ]
+	 	    ]
 	};
 	function onChange(e){
 		debugger;

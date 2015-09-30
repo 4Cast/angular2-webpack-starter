@@ -67,7 +67,7 @@ fourcastApp.config(function($stateProvider, $urlRouterProvider) {
           
       $stateProvider
           .state('subcontracts.list', {
-            url: '/list/projectId',
+            url: '/list/:projectId',
             templateUrl: 'views/subcontracts/subcontractsList.html',
             controller: 'subcontractsController'
       
