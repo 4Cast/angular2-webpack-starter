@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/kendo/kendo.dataviz.min.css">
   <link rel="stylesheet" href="css/kendo/kendo.dataviz.material.min.css">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
- 
+
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.min.js"></script>
@@ -19,15 +19,18 @@
   <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
   <script src="bower_components/restangular/dist/restangular.min.js"></script>
   <script src="bower_components/lodash/lodash.min.js"></script>
-  
+
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/angular-wakanda/angular-wakanda.min.js"></script>
-    
+  <script src="js/ui-bootstrap/ui-bootstrap-tpls-0.14.1.min.js"></script>
   <script src="js/kendo/kendo.all.min.js"></script>
   <script src="js/mainController.js"></script>
   <script src="js/projectControllers.js"></script>
  <script src="js/subcontractControllers.js"></script>
+  <script src="js/costImportController.js"></script>
 <style>
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
 	.scrollable-menu {
 	    height: auto;
@@ -35,9 +38,9 @@
 	    overflow-x: hidden;
 	}
 </style>
- 
 
-  
+
+
 </head>
 <body><!-- ng-controller="projectsController"-->
 <nav class="navbar navbar-inverse" role="navigation">
@@ -47,14 +50,22 @@
     <ul class="nav navbar-nav">
         <li><a ui-sref="projects.list">Projects</a></li>
         <li><a ui-sref="subcontracts">Subcontracts</a></li>
+        <li><a ui-sref="costImports.list">Cost Imports</a></li>
         <li><a ui-sref="about">About</a></li>
     </ul>
 </nav>
 
 
-  	<div ng-controller='mainController'> 
+  	<div ng-controller='mainController'>
 		<div ui-view></div>
 	</div>
+
+
+  <input type="file" id="files" name="files[]" multiple />
+<output id="list"></output>
+
+<script src="js/fileHandler.js"></script>
+
     <!-- <div id="grid" kendo-grid="projectsGrid" k-options="customOptions"
     k-rebind="customOptions"></div>-->
 

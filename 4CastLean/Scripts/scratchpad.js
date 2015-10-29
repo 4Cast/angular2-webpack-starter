@@ -1,8 +1,8 @@
 
 function doSomething(){
 	
-	var scnt = ds.scnt.query('id == :1', '117F5C32E2AE40B9AC8D78D845E48C43') ;
-	return scnt.subcontractProject;	
+	var data = ds.costImportHeader.find('id == :1', '14DC14145E8748BCBB666A6CCF2CD5F0') ;
+	//return scnt.subcontractProject;	
 }
 
 doSomething();

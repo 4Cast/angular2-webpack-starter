@@ -4,7 +4,7 @@
 var kendo:any;
 var kendoConsole:any;
 
-fourcastApp.controller('scntContainerController', function($scope, $location, $state, $wakanda){
+fourcastApp.controller('subcontractContainerController', function($scope, $location, $state, $wakanda){
 
 	setupKendoOptions($scope);
 

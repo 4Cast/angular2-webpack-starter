@@ -1,7 +1,7 @@
 'use strict';
 var kendo;
 var kendoConsole;
-fourcastApp.controller('scntContainerController', function ($scope, $location, $state, $wakanda) {
+fourcastApp.controller('subcontractContainerController', function ($scope, $location, $state, $wakanda) {
     setupKendoOptions($scope);
     $wakanda.init().then(function oninit(ds) {
         debugger;
