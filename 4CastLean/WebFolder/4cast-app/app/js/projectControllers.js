@@ -9,10 +9,11 @@ fourcastApp.controller('pController', function($scope, Restangular){
 	});
 });
 
-fourcastApp.controller("projectsController", function($scope, $rootScope, $location, $state, $wakanda) {
+fourcastApp.controller("projectsController", function($scope, $rootScope, $location, $stateParams, $state, $wakanda) {
 	
 	$wakanda.init().then(function oninit(ds) {
-				
+	
+		
 		$scope.projects = ds.project.$find({pageSize: 200});
 		$scope.projects.$promise.then(function(){
 			$scope.dataSource = new kendo.data.DataSource({
