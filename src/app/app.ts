@@ -19,7 +19,7 @@ import {ROUTER_DIRECTIVES} from 'angular2/router';
 @Directive({
   selector: '[x-large]' // using [ ] means selecting attributes
 })
-class XLarge {
+export class XLarge {
   constructor(element: ElementRef) {
     // simple DOM manipulation to set font size to x-large
     // `nativeElement` is the direct reference to the DOM element
@@ -106,7 +106,6 @@ export class App {
       .get(BASE_URL + TODO_API_URL, {
         headers: JSON_HEADERS
       })
-      .map(res => res.json())
       .subscribe(
         // onNext callback
         data => this.serverData(data),
@@ -129,7 +128,6 @@ export class App {
       } npm run express-install ${'\n'
       } npm run express
     `);
-    console.error(err);
   }//errorMessage
 
 }
@@ -141,5 +139,6 @@ export class App {
  * (The examples may not be updated as quickly. Please open an issue on github for us to update it)
  * you can change the `entry` in webpack.config to quickly view the examples
  * For help or questions please contact us at @AngularClass on twitter
- * or via chat on gitter at https://gitter.im/angular-class/angular2-webpack-starter
+ * or our chat on Slack at https://AngularClass.com/slack-join
+ * or via chat on Gitter at https://gitter.im/AngularClass/angular2-webpack-starter
  */

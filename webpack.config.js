@@ -74,6 +74,7 @@ module.exports = {
       // './examples/rx-autosuggest/bootstrap'
       // './examples/rx-draggable/bootstrap'
       // './examples/rx-timeflies/bootstrap'
+      // './examples/game-tictactoe/bootstrap'
       // './examples/simple-component/bootstrap'
       // './examples/simple-todo/bootstrap'
 
@@ -126,8 +127,6 @@ module.exports = {
           /\.min\.js$/,
           /\.spec\.ts$/,
           /\.e2e\.ts$/,
-          /web_modules/,
-          /test/,
           /node_modules/
         ]
       }

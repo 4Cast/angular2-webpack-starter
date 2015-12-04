@@ -1,7 +1,8 @@
-[![volkswagen status](https://auchenberg.github.io/volkswagen/volkswargen_ci.svg?v=1)](https://github.com/auchenberg/volkswagen) [![GitHub version](https://badge.fury.io/gh/angular-class%2Fangular2-webpack-starter.svg)](http://badge.fury.io/gh/angular-class%2Fangular2-webpack-starter)
-[![Dependency Status](https://david-dm.org/angular-class/angular2-webpack-starter.svg)](https://david-dm.org/angular-class/angular2-webpack-starter)
-[![Issue Stats](http://issuestats.com/github/angular-class/angular2-webpack-starter/badge/pr?style=flat)](http://issuestats.com/github/angular-class/angular2-webpack-starter)
-[![Issue Stats](http://issuestats.com/github/angular-class/angular2-webpack-starter/badge/issue?style=flat)](http://issuestats.com/github/angular-class/angular2-webpack-starter) [![Stack Share](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/angularclass/angular-2-webpack-starter)
+[![taylor swift](https://img.shields.io/badge/secured%20by-taylor%20swift-brightgreen.svg)](https://twitter.com/SwiftOnSecurity)
+[![volkswagen status](https://auchenberg.github.io/volkswagen/volkswargen_ci.svg?v=1)](https://github.com/auchenberg/volkswagen) [![GitHub version](https://badge.fury.io/gh/angularclass%2Fangular2-webpack-starter.svg)](http://badge.fury.io/gh/angular-class%2Fangular2-webpack-starter)
+[![Dependency Status](https://david-dm.org/angularclass/angular2-webpack-starter.svg)](https://david-dm.org/angularclass/angular2-webpack-starter)
+[![Issue Stats](http://issuestats.com/github/angularclass/angular2-webpack-starter/badge/pr?style=flat)](http://issuestats.com/github/angularclass/angular2-webpack-starter)
+[![Issue Stats](http://issuestats.com/github/angularclass/angular2-webpack-starter/badge/issue?style=flat)](http://issuestats.com/github/angularclass/angular2-webpack-starter) [![Stack Share](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/angularclass/angular-2-webpack-starter)
 
 <p align="center">
   <a href="https://angularclass.com" target="_blank">
@@ -9,7 +10,7 @@
   </a>
 </p>
 
-# Angular2 Webpack Starter [![Join Slack](https://img.shields.io/badge/slack-join-brightgreen.svg)](https://angularclass.com/slack-join) [![Join the chat at https://gitter.im/angular-class/angular2-webpack-starter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/angular-class/angular2-webpack-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# Angular2 Webpack Starter [![Join Slack](https://img.shields.io/badge/slack-join-brightgreen.svg)](https://angularclass.com/slack-join) [![Join the chat at https://gitter.im/angularclass/angular2-webpack-starter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/angularclass/angular2-webpack-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
 > An Angular 2 starter kit featuring [Angular 2](https://angular.io) ([Router](https://angular.io/docs/js/latest/api/router/), [Forms](https://angular.io/docs/js/latest/api/forms/),
@@ -17,7 +18,8 @@
 [Services](https://gist.github.com/gdi2290/634101fec1671ee12b3e#_follow_@AngularClass_on_twitter),
 [Tests](https://angular.io/docs/js/latest/api/test/), [E2E](https://angular.github.io/protractor/#/faq#what-s-the-difference-between-karma-and-protractor-when-do-i-use-which-)), [Karma](https://karma-runner.github.io/), [Protractor](https://angular.github.io/protractor/), [Jasmine](https://github.com/jasmine/jasmine), [TypeScript](http://www.typescriptlang.org/), and [Webpack](http://webpack.github.io/) by [AngularClass](https://angularclass.com).
 
-> If you're looking for Angular 1.x please use [NG6-starter](https://github.com/angular-class/NG6-starter)
+> If you're looking for Angular 1.x please use [NG6-starter](https://github.com/angularclass/NG6-starter)  
+> If you're looking to learn about Webpack and ES6 Build Tools check out [ES6-build-tools](https://github.com/AngularClass/ES6-build-tools)
 
 This seed repo serves as an Angular 2 starter for anyone looking to get up and running with Angular 2 and TypeScript fast. Using a [Webpack](http://webpack.github.io/) for building our files and assisting with boilerplate. We're also using Protractor for our end-to-end story and Karma for our unit tests.
 * Best practices in file and application organization for Angular 2.
@@ -38,7 +40,7 @@ Warning: Angular 2.0 is not production ready yet!
 
 ```bash
 # clone our repo
-git clone https://github.com/angular-class/angular2-webpack-starter.git 
+git clone https://github.com/angularclass/angular2-webpack-starter.git 
 
 # change directory to our repo
 cd angular2-webpack-starter
@@ -212,7 +214,7 @@ We have good experience using these editors:
 * If TypeScript compiles to ES5 why do we need traceur-runtime?
   * Angular 2 framework itself expects these ES6 features.
 * What's the current browser support for Angular 2 Alpha?
-  * Please view the updated list of [browser support for Angular 2](https://github.com/angular-class/awesome-angular2#current-browser-support-for-angular-2)
+  * Please view the updated list of [browser support for Angular 2](https://github.com/angularclass/awesome-angular2#current-browser-support-for-angular-2)
 * What is the `TypeScript warning "Value of type 'typeof Directive' is not callable. Did you mean to include 'new'?`"?
   * This is an error with the typings defined in DefinitelyTyped (please ignore until it's fixed)
 * How do I use `moduleId` with `module.id` in webpack?
@@ -232,14 +234,14 @@ We have good experience using these editors:
 # Support, Questions, or Feedback
 > Contact us anytime for anything about this repo or Angular 2
 
-* [Gitter: angular-class/angular2-webpack-starter](https://gitter.im/angular-class/angular2-webpack-starter)
+* [Gitter: angular-class/angular2-webpack-starter](https://gitter.im/angularclass/angular2-webpack-starter)
 * [Twitter: @AngularClass](https://twitter.com/AngularClass)
 
 
 # Other Seed/Starter/Example Repos
-* [angular2-webpack-starter (AngularClass)](https://github.com/angular-class/angular2-webpack-starter)
+* [angular2-webpack-starter (AngularClass)](https://github.com/angularclass/angular2-webpack-starter)
   * Client/Server, Webpack, TypeScript, TSD, Protractor, Karma, Jasmine, Env Dev/Prod, Server API
-* [ng2-play.ts (Pawel Kozlowski)](https://github.com/pkozlowski-opensource/ng2-play.ts)
+* [ng2-play (Pawel Kozlowski)](https://github.com/pkozlowski-opensource/ng2-play)
   * Client only, Minimalist, SystemJS, Gulp, TypeScript
 * [angular2-seed (Minko Gechev)](https://github.com/mgechev/angular2-seed)
   * Client only, SystemJS, Gulp, TypeScript, TSD, Versioned, Env Dev/Prod
