@@ -5,6 +5,7 @@
  * env(), getBanner(), root(), and rootDir()
  * are defined at the bottom
  */
+var vendorRoot = __dirname + "/app/js/vendor";
 var sliceArgs = Function.prototype.call.bind(Array.prototype.slice);
 var toString  = Function.prototype.call.bind(Object.prototype.toString);
 var NODE_ENV  = process.env.NODE_ENV || 'development';
@@ -80,6 +81,11 @@ module.exports = {
 
       './src/app/bootstrap'
     ]
+  },
+  externals: {
+
+    "file-loader!vendor/bootstrap@3.3.5.min.css": "bootstrap",
+
   },
 
   // Config for our build files
