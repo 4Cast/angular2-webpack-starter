@@ -82,11 +82,7 @@ module.exports = {
       './src/app/bootstrap'
     ]
   },
-  externals: {
-
-    "file-loader!vendor/bootstrap@3.3.5.min.css": "bootstrap",
-
-  },
+  
 
   // Config for our build files
   output: {

@@ -9,6 +9,9 @@ import {Http, Headers} from 'angular2/http';
  * Angular Directives
  */
 import {ROUTER_DIRECTIVES} from 'angular2/router';
+import {navBar} from './components/FourcastNav';
+import {HomeComponent} from './components/HomeComponent';
+
 
 
 /*
@@ -38,7 +41,7 @@ export class XLarge {
   selector: 'app', // <app></app>
   // We need to tell Angular's compiler which directives are in our template.
   // Doing so will allow Angular to attach our behavior to an element
-  directives: [ ROUTER_DIRECTIVES, XLarge ],
+  directives: [ ROUTER_DIRECTIVES, XLarge, navBar ],
   // Our list of styles in our component. We may add more to compose many styles together
   styles: [`
     .title {
@@ -49,10 +52,14 @@ export class XLarge {
     }
   `],
   // Every Angular template is first compiled by the browser before Angular runs it's compiler
-  template: `
-  <header>
+  template:
+  `
+  <div class="page-header">
+  <nav-bar>Nav bar here if it works</nav-bar>
+    <div class="container">
     <h1 class="title">Hello {{ title }}</h1>
-  </header>
+    <div>
+  </div>
 
   <main>
     Your Content Here
@@ -76,6 +83,17 @@ export class XLarge {
   </footer>
   `
 })
+
+@RouteConfig([
+  { path: "/", redirectTo: ["/home"] },
+  {path: "/home", as: "Home", component: HomeComponent}
+//  { path: "/projects/...", as: "Projects", component: ProjectsMain },
+  //{ path: "/detail/:id", as: "Detail", component: ProjectDetail }
+  // { path: "/", redirectTo: "/users" },
+ // { path: "/users", as: "Users", component: UsersList },
+ // { path: "/detail/:id", as: "Detail", component: UserDetail}
+])
+
 export class App {
   // These are member type
   title: string;

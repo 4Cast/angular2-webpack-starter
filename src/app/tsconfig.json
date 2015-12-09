@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "isolatedModules": false,
+        "jsx": "react",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true
+    },
+    "filesGlob": [
+        "**/*.ts",
+        "**/*.tsx",
+        "!node_modules/**"
+    ],
+    "compileOnSave": false,
+    "exclude": [],
+    "files": [
+        "app.ts",
+        "bootstrap.ts",
+        "components/FourcastNav.ts",
+        "components/HomeComponent.ts",
+        "components/projects/ProjectDetail.ts",
+        "components/projects/ProjectsComponent.ts",
+        "components/projects/ProjectsList.ts",
+        "components/projects/projectsMain.ts",
+        "components/services/fourcastService.ts",
+        "components/users/UserDetail.ts",
+        "components/users/UsersList.ts",
+        "services/fourcastService.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
+}
