@@ -79,10 +79,12 @@ module.exports = {
       // './examples/simple-component/bootstrap'
       // './examples/simple-todo/bootstrap'
 
-      './src/app/bootstrap'
+      //'./src/app/bootstrap'
+
+      './examples/large-app/bootstrap'
     ]
   },
-  
+
 
   // Config for our build files
   output: {

@@ -62,20 +62,7 @@ export class XLarge {
   </div>
 
   <main>
-    Your Content Here
-    <div>
-
-      <input type="text" [value]="title" (input)="title = $event.target.value" autofocus>
-      <!--
-        Rather than wiring up two-way data-binding ourselves
-        we can use Angular's [(ng-model)] syntax
-        <input type="text" [(ng-model)]="title">
-      -->
-    </div>
-
-    <pre>this.title = {{ title | json }}</pre>
-    <pre>this.data = {{ data | json }}</pre>
-
+    <router-outlet></router-outlet>
   </main>
 
   <footer x-large>
@@ -85,8 +72,8 @@ export class XLarge {
 })
 
 @RouteConfig([
-  { path: "/", redirectTo: ["/home"] },
-  {path: "/home", as: "Home", component: HomeComponent}
+  //{ path: "/", redirectTo: ["/home"] },
+  {path: "/home", component: HomeComponent}
 //  { path: "/projects/...", as: "Projects", component: ProjectsMain },
   //{ path: "/detail/:id", as: "Detail", component: ProjectDetail }
   // { path: "/", redirectTo: "/users" },
