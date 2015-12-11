@@ -1,17 +1,35 @@
-/*
- * Angular 2 decorators and services
- */
-import {Directive, Component, ElementRef} from 'angular2/angular2';
-import {RouteConfig, Router} from 'angular2/router';
-import {Http, Headers} from 'angular2/http';
+import {Component, View, Directive, ElementRef} from 'angular2/angular2';
+import {RouteConfig} from 'angular2/router';
 
 /*
- * Angular Directives
+ * Directives
  */
+import {CORE_DIRECTIVES, FORM_DIRECTIVES} from 'angular2/angular2';
 import {ROUTER_DIRECTIVES} from 'angular2/router';
-import {navBar} from './components/FourcastNav';
-import {HomeComponent} from './components/HomeComponent';
+// Import all of our custom app directives
+import {APP_DIRECTIVES} from './directives/directives';
 
+/*
+ * App Pipes
+ * our collection of pipes registry
+ */
+import {APP_PIPES} from './pipes/pipes';
+
+/*
+ * Components
+ */
+// We use a folder if we want separate files
+import {Home} from './components/home/home';
+// Otherwise we only use one file for a component
+import {Dashboard} from './components/dashboard';
+// A simple example of a Component using a Service
+//import {Todo} from '../../simple-todo/components/todo';
+
+// RxJs examples
+//import {RxJsExamples} from './rxjs_examples/rxjs-examples';
+
+// Use webpack's `require` to get files as a raw string using raw-loader
+const APP_STYLES = require('../public/css/bootstrap@3.3.5.min.css');
 
 
 /*
@@ -33,116 +51,61 @@ export class XLarge {
 /*
  * App Component
  * Top Level Component
+ * Simple router component example
  */
 @Component({
-  // The selector is what angular internally uses
-  // for `document.querySelectorAll(selector)` in our index.html
-  // where, in this case, selector is the string 'app'
-  selector: 'app', // <app></app>
-  // We need to tell Angular's compiler which directives are in our template.
-  // Doing so will allow Angular to attach our behavior to an element
-  directives: [ ROUTER_DIRECTIVES, XLarge, navBar ],
-  // Our list of styles in our component. We may add more to compose many styles together
-  styles: [`
-    .title {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    main {
-      padding: 1em;
-    }
-  `],
-  // Every Angular template is first compiled by the browser before Angular runs it's compiler
-  template:
-  `
-  <div class="page-header">
-  <nav-bar>Nav bar here if it works</nav-bar>
-    <div class="container">
-    <h1 class="title">Hello {{ title }}</h1>
-    <div>
-  </div>
+  selector: 'app', // without [ ] means we are selecting the tag directly
+  viewBindings: []
+})
+@View({
+  pipes:      [ APP_PIPES ],
+  directives: [ APP_DIRECTIVES ],
+  styles:     [ APP_STYLES ],
+  template: `
+  <nav class="navbar navbar-default">
+     <div class="container-fluid">
+       <!-- Brand and toggle get grouped for better mobile display -->
+     <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="#" style="padding-top:0px;"><img src="4Cast_Logo.png" alt="Angular2" height="50" width="78"></a>
+       </div>
+       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+       <ul class="nav navbar-nav">
+         <li class="active"><a [router-link]=" ['/Home'] " >Home <span class="sr-only">(current)</span></a></li>
+         <li><a [router-link]=" ['/Dashboard'] " >Dashboard</a></li>
 
-  <main>
-    <router-outlet></router-outlet>
-  </main>
 
-  <footer x-large>
-    WebPack Angular 2 Starter by <a href="https://twitter.com/AngularClass">@AngularClass</a>
-  </footer>
+       </ul>
+
+
+     </div><!-- /.navbar-collapse -->
+   </div><!-- /.container-fluid -->
+  </nav>
+
+
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+
+    <footer>
+      WebPack Angular 2 Starter by <a href="https://twitter.com/AngularClass">@AngularClass</a>
+    </footer>
   `
 })
-
 @RouteConfig([
-  //{ path: "/", redirectTo: ["/home"] },
-  {path: "/home", component: HomeComponent}
-//  { path: "/projects/...", as: "Projects", component: ProjectsMain },
-  //{ path: "/detail/:id", as: "Detail", component: ProjectDetail }
-  // { path: "/", redirectTo: "/users" },
- // { path: "/users", as: "Users", component: UsersList },
- // { path: "/detail/:id", as: "Detail", component: UserDetail}
+  { path: '/',                  as: 'Home',          component: Home },
+  { path: '/dashboard',         as: 'Dashboard',     component: Dashboard }
+//  { path: '/todo',              as: 'Todo',          component: Todo },
+//  { path: '/rxjs-examples/...', as: 'RxjsExamples', component: RxJsExamples }
 ])
-
 export class App {
-  // These are member type
-  title: string;
-  data: Array<any> = []; // default data
-  // TypeScript public modifiers
-  constructor(public http: Http) {
-    this.title = 'Angular 2';
+  name: string;
+  constructor() {
+    this.name = 'angular'; // used in logo
   }
-
-  ngOnInit() {
-    // Our API
-    // Before you start the app, run these commands in another process:
-    //
-    // - npm run express-install
-    // - npm run express
-    //
-    // This will start a process that will listen for requests on port 3001
-
-    const BASE_URL = 'http://localhost:3001';
-    const TODO_API_URL = '/api/todos';
-    const JSON_HEADERS = new Headers();
-
-    JSON_HEADERS.append('Accept', 'application/json');
-    JSON_HEADERS.append('Content-Type', 'application/json');
-
-    this.http
-      .get(BASE_URL + TODO_API_URL, {
-        headers: JSON_HEADERS
-      })
-      .subscribe(
-        // onNext callback
-        data => this.serverData(data),
-        // onError callback
-        err  => this.errorMessage(err),
-        // onComplete callback
-        ()   => console.log('complete')
-      );//end http
-
-  }
-
-  serverData(data) {
-    console.log('data', data);
-    this.data = data;
-  }//serverData
-
-  errorMessage(err) {
-    console.info(`${'\n'
-      } // You must run these commands in another process for the Http API to work  ${'\n'
-      } npm run express-install ${'\n'
-      } npm run express
-    `);
-  }//errorMessage
-
 }
-
-
-
-/*
- * Please review the examples/ folder for more angular app examples
- * (The examples may not be updated as quickly. Please open an issue on github for us to update it)
- * you can change the `entry` in webpack.config to quickly view the examples
- * For help or questions please contact us at @AngularClass on twitter
- * or our chat on Slack at https://AngularClass.com/slack-join
- * or via chat on Gitter at https://gitter.im/AngularClass/angular2-webpack-starter
- */
