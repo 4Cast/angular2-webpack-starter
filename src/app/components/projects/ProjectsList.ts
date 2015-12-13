@@ -21,7 +21,7 @@ import {fourcastService} from "../../services/fourcastService";
 
 
 @Component({
-  selector: "search"
+  selector: 'search'
 })
 @View({
   directives: [NgIf, NgFor, RouterLink],

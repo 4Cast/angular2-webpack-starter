@@ -22,11 +22,13 @@ import {APP_PIPES} from './pipes/pipes';
 import {Home} from './components/home/home';
 // Otherwise we only use one file for a component
 import {Dashboard} from './components/dashboard';
+
+import {ProjectsMain} from './components/projects/projectsMain';
 // A simple example of a Component using a Service
 //import {Todo} from '../../simple-todo/components/todo';
 
 // RxJs examples
-//import {RxJsExamples} from './rxjs_examples/rxjs-examples';
+import {RxJsExamples} from '../../examples/large-app/components/rxjs_examples/rxjs-examples';
 
 // Use webpack's `require` to get files as a raw string using raw-loader
 const APP_STYLES = require('../public/css/bootstrap@3.3.5.min.css');
@@ -78,7 +80,7 @@ export class XLarge {
        <ul class="nav navbar-nav">
          <li class="active"><a [router-link]=" ['/Home'] " >Home <span class="sr-only">(current)</span></a></li>
          <li><a [router-link]=" ['/Dashboard'] " >Dashboard</a></li>
-
+      <li><a [router-link]=" ['/RxJsExamples'] " >Projects</a></li>
 
        </ul>
 
@@ -99,9 +101,10 @@ export class XLarge {
 })
 @RouteConfig([
   { path: '/',                  as: 'Home',          component: Home },
-  { path: '/dashboard',         as: 'Dashboard',     component: Dashboard }
+  { path: '/dashboard',         as: 'Dashboard',     component: Dashboard },
+  //{ path: '/projects/...', as: 'Projects', component: ProjectsMain}
 //  { path: '/todo',              as: 'Todo',          component: Todo },
-//  { path: '/rxjs-examples/...', as: 'RxjsExamples', component: RxJsExamples }
+  { path: '/rxjs-examples/...', as: 'RxjsExamples', component: RxJsExamples }
 ])
 export class App {
   name: string;

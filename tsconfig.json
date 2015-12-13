@@ -55,6 +55,8 @@
     "examples/rx-timeflies/components/timeflies.ts",
     "examples/rx-timeflies/services/Message.ts",
     "examples/simple-component/app.ts",
+    "examples/simple-component/away/away.ts",
+    "examples/simple-component/away/home.spec.ts",
     "examples/simple-component/bootstrap.ts",
     "examples/simple-component/home/home.spec.ts",
     "examples/simple-component/home/home.ts",

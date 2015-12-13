@@ -4,6 +4,7 @@
 import {Component, View} from 'angular2/angular2';
 
 import {Home} from './home/home';
+import {Away} from './away/away';
 
 /*
  * App Component
@@ -13,10 +14,12 @@ import {Home} from './home/home';
   selector: 'app'
 })
 @View({
-  directives: [ Home ],
+  directives: [ Home, Away ],
   template: `
   <main>
-    <home></home>
+    <!--<home></home>-->
+    
+    <away></away>
   </main>
   `
 })
