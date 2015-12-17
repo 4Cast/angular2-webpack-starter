@@ -1,0 +1,24 @@
+<h1>Projects List</h1>
+ <p>
+     <div *ng-if="results">
+<div>
+<button (click)="testRouter()">Test</button>
+<!--  <a class="btn btn-primary" [router-link]="['/Detail', {id: ''}]" role="button">New Project</a>-->
+ </div>
+       <div class="row">
+         <div class="col-sm-6 col-md-4" *ng-for="#t of results.__ENTITIES">
+           <div class="thumbnail">
+             <div class="content">
+           <!--  <a [router-link]="['../Detail', {id: t.id}]">-->
+             {{t.projectName}}
+         <!--  </a> -->
+             <p>{{t.projectNumber}}</p>
+
+
+
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </p>

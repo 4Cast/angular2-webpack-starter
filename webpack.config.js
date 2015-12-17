@@ -79,9 +79,16 @@ module.exports = {
       // './examples/simple-component/bootstrap'
       // './examples/simple-todo/bootstrap'
 
-      //'./src/app/bootstrap'
 
-      './examples/large-app/bootstrap'
+      /*.src/app/bootsrap is the entry point for the full development project
+      * use the others to try out individual ideas
+      **/
+
+      // './src/app/bootstrap'
+
+        './examples/simple-http/bootstrap'
+
+      //'./examples/large-app/bootstrap'
     ]
   },
 

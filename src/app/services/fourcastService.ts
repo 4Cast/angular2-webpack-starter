@@ -12,7 +12,8 @@ import {Http, Response} from "angular2/http";
 @Injectable()
 export class fourcastService {
   static BASE_URL: string = "http://127.0.0.1/rest/";
-  data: Array<any> = []; // default data
+  data: Object; // default data
+  loading: boolean;
 
   constructor(public http: Http) {
   }
@@ -55,6 +56,19 @@ export class fourcastService {
   //   //return this.http.post(updateURL, userString).toPromise();
   //
   // }
+
+  makeRequest(): Object{
+    this.loading = true;
+
+    this.http.request("http://localhost/rest/project")
+
+      .subscribe((res: Response) => {
+        this.data = res.json();
+        this.loading = false;
+      })
+
+      return this.data;
+  }
 
   serverData(data) {
     console.log('data', data);

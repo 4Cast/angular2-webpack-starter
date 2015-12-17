@@ -1,4 +1,9 @@
-import {Component, View, Directive, ElementRef} from 'angular2/angular2';
+/// <reference path="../../src/typings/_custom.d.ts" />
+
+/*
+ * Angular 2
+ */
+import {Component, View} from 'angular2/angular2';
 import {RouteConfig} from 'angular2/router';
 
 /*
@@ -7,48 +12,32 @@ import {RouteConfig} from 'angular2/router';
 import {CORE_DIRECTIVES, FORM_DIRECTIVES} from 'angular2/angular2';
 import {ROUTER_DIRECTIVES} from 'angular2/router';
 // Import all of our custom app directives
-import {APP_DIRECTIVES} from './directives/directives';
+import {APP_DIRECTIVES} from '../../examples/large-app/directives/directives';
 
 /*
  * App Pipes
  * our collection of pipes registry
  */
-import {APP_PIPES} from './pipes/pipes';
+import {APP_PIPES} from '../../examples/large-app/pipes/pipes';
 
 /*
  * Components
  */
 // We use a folder if we want separate files
-import {Home} from './components/home/home';
+import {Home} from '../../examples/simple-component/home/home';
 // Otherwise we only use one file for a component
-import {Dashboard} from './components/dashboard';
-
-import {ProjectsMain} from './components/projects/projectsMain';
+import {Dashboard} from '../../examples/large-app/components/dashboard';
 // A simple example of a Component using a Service
-//import {Todo} from '../../simple-todo/components/todo';
+import {Todo} from '../../examples/simple-todo/components/todo';
 
 // RxJs examples
 import {RxJsExamples} from '../../examples/large-app/components/rxjs_examples/rxjs-examples';
 
+import {ProjectsMain} from './components/projects/ProjectsMain'
+
+
 // Use webpack's `require` to get files as a raw string using raw-loader
-const APP_STYLES = require('../public/css/bootstrap@3.3.5.min.css');
-
-
-/*
- * Directive
- * XLarge is a simple directive to show how one is made
- */
-@Directive({
-  selector: '[x-large]' // using [ ] means selecting attributes
-})
-export class XLarge {
-  constructor(element: ElementRef) {
-    // simple DOM manipulation to set font size to x-large
-    // `nativeElement` is the direct reference to the DOM element
-    element.nativeElement.style.fontSize = 'x-large';
-  }
-}
-
+const APP_STYLES = require('./app.css');
 
 /*
  * App Component
@@ -64,31 +53,26 @@ export class XLarge {
   directives: [ APP_DIRECTIVES ],
   styles:     [ APP_STYLES ],
   template: `
-  <nav class="navbar navbar-default">
-     <div class="container-fluid">
-       <!-- Brand and toggle get grouped for better mobile display -->
-     <div class="navbar-header">
-         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-           <span class="sr-only">Toggle navigation</span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-         </button>
-         <a class="navbar-brand" href="#" style="padding-top:0px;"><img src="4Cast_Logo.png" alt="Angular2" height="50" width="78"></a>
-       </div>
-       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-       <ul class="nav navbar-nav">
-         <li class="active"><a [router-link]=" ['/Home'] " >Home <span class="sr-only">(current)</span></a></li>
-         <li><a [router-link]=" ['/Dashboard'] " >Dashboard</a></li>
-      <li><a [router-link]=" ['/RxJsExamples'] " >Projects</a></li>
-
-       </ul>
-
-
-     </div><!-- /.navbar-collapse -->
-   </div><!-- /.container-fluid -->
-  </nav>
-
+    <header>
+      <div layout="row" class="top-nav ac-default-theme">
+        <img src="angular-shield.png" alt="Angular2" height="54" width="54">
+        <span class="logo">{{ name | capitalize }} + Webpack</span>
+        <ul>
+          <li class="l-left">
+            <a [router-link]=" ['/Home'] " class="top-nav-button ac-default-theme">Home</a>
+          </li>
+          <li class="l-left">
+            <a [router-link]=" ['/Dashboard'] " class="top-nav-button ac-default-theme">Dashboard</a>
+          </li>
+          <li class="l-left">
+            <a [router-link]=" ['/Todo'] " class="top-nav-button ac-default-theme">Todo</a>
+          </li>
+          <li class="l-left">
+            <a [router-link]=" ['/Projects', 'List'] " class="top-nav-button ac-default-theme">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
     <main>
       <router-outlet></router-outlet>
@@ -102,9 +86,8 @@ export class XLarge {
 @RouteConfig([
   { path: '/',                  as: 'Home',          component: Home },
   { path: '/dashboard',         as: 'Dashboard',     component: Dashboard },
-  //{ path: '/projects/...', as: 'Projects', component: ProjectsMain}
-//  { path: '/todo',              as: 'Todo',          component: Todo },
-  { path: '/rxjs-examples/...', as: 'RxjsExamples', component: RxJsExamples }
+  { path: '/todo',              as: 'Todo',          component: Todo },
+  { path: '/projects/...', as: 'Projects', component: ProjectsMain }
 ])
 export class App {
   name: string;

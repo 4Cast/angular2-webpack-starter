@@ -16,39 +16,30 @@ import {
 /*
  * Services
  */
+
+/*
+*
+* I currently have two services named fourcastService.
+* This one I am using here is in the ./components/services folder
+* I think this is the older one.
+* The other one is in the folder /src/services.
+* I think this is the new one based on webpack Starter
+* Regardless, I want the service to return an observable rather than a promise.
+*
+*/
+
+
 import {fourcastService} from "../../services/fourcastService";
 //import {ProjectDetail} from "./ProjectDetail";
 
+let template = require('./ProjectsList-simple.html');
 
 @Component({
   selector: 'search'
 })
 @View({
   directives: [NgIf, NgFor, RouterLink],
-  template: `  <p>
-      <div *ng-if="results">
-<div>
-<button (click)="testRouter()">Test</button>
-<!--  <a class="btn btn-primary" [router-link]="['/Detail', {id: ''}]" role="button">New Project</a>-->
-  </div>
-        <div class="row">
-          <div class="col-sm-6 col-md-4" *ng-for="#t of results.__ENTITIES">
-            <div class="thumbnail">
-              <div class="content">
-              <a [router-link]="['../Detail', {id: t.id}]">
-              {{t.projectName}}
-            </a>
-              <p>{{t.projectNumber}}</p>
-
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </p>
-`
+  template: template
 })
 
 // @RouteConfig([
@@ -62,23 +53,29 @@ export class ProjectsList implements OnInit {
   query: string;
   results: Object;
 
+    //public fourcast: fourcastService,
+
   constructor(public fourcast: fourcastService, public router: Router,
               public routeParams: RouteParams) {
   }
 
-  ngOnInit(): void {
-    this.search("project");
-  }
+
 
   testRouter():void{
-    debugger;
 
+  }
+
+  ngOnInit(){
+    debugger;
+      this.results = this.fourcast.makeRequest();
   }
 
   submit(query: string): void {
     this.router.navigate(["/Search", {query: query}]);
     this.search("project");
   }
+
+
 
   newProject(): void {
 
@@ -89,6 +86,7 @@ export class ProjectsList implements OnInit {
     // if (!this.query) {
     //   return;
     // }
+
     //this.fourcast.searchTrack(dataClass).then(this.saveResults.bind(this));
   }
 

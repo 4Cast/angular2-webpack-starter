@@ -39,6 +39,7 @@ import {ProjectDetail} from "./ProjectDetail";
   { path: '/search',        as: 'Search',        component: SearchGithub},
   { path: '/timeflies',     as: 'Timeflies',     component: Timeflies },
   { path: '/tictactoe',     as: 'Tictactoe',     component: Tictactoe },
+  { path: '/list',          as: 'List',          component: ProjectsList}
   //{ path: '/draggable',     as: 'Draggable',     component: DragElement}
 ])
 
