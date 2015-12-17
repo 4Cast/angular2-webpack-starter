@@ -2,6 +2,7 @@
 
 import {Injectable, provide} from "angular2/angular2";
 import {Http, Response} from "angular2/http";
+import * as Rx  from '@reactivex/rxjs';
 
 //import {Promise} from "angular2/src/core/facade/async";
 
@@ -15,6 +16,17 @@ export class fourcastService {
   static BASE_URL: string = "http://127.0.0.1/rest/";
 
   constructor(public http: Http) {
+  }
+
+  search(query: string): Rx.Observable<any[]> {
+
+    return this.http.get("http://127.0.0.1/rest/project")
+       .map((res: Response) => res.json())  // make json
+       .map((res) => res['__ENTITIES']);
+     // obs.map((res) => String(res))
+     // obs.map((res) => JSON.parse(res));
+
+
   }
 
   query(URL: string, id?: string, params?: Array<string>): void {
@@ -50,17 +62,17 @@ export class fourcastService {
   //   return this.http.get(queryURL).toPromise();
   // }
 
-  search(dataClass: string, id?: string): void {
-
-if(id)
-  {return this.query(dataClass, id);}
-else
-  {return this.query(dataClass);}
-    // return this.query()`/search`, [
-    //   `q=${query}`,
-    //   `type=${type}`
-    // ]);
-  }
+//   search(dataClass: string, id?: string): void {
+//
+// if(id)
+//   {return this.query(dataClass, id);}
+// else
+//   {return this.query(dataClass);}
+//     // return this.query()`/search`, [
+//     //   `q=${query}`,
+//     //   `type=${type}`
+//     // ]);
+//   }
 
   searchTrack(dataClass: string): void {
     //return this.search(query, "track");

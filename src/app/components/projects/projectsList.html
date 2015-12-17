@@ -1,12 +1,15 @@
-<h1>Projects List</h1>
- <p>
+<h3>New Projects List</h3>
+
+<div *ng-if='loading'>Loading...</div>
+
      <div *ng-if="results">
+       <p>Results available</p>
 <div>
 <button (click)="testRouter()">Test</button>
 <!--  <a class="btn btn-primary" [router-link]="['/Detail', {id: ''}]" role="button">New Project</a>-->
  </div>
        <div class="row">
-         <div class="col-sm-6 col-md-4" *ng-for="#t of results.__ENTITIES">
+         <div class="col-sm-6 col-md-4" *ng-for="#t of results">
            <div class="thumbnail">
              <div class="content">
            <!--  <a [router-link]="['../Detail', {id: t.id}]">-->
@@ -21,4 +24,3 @@
          </div>
        </div>
      </div>
-   </p>

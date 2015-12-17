@@ -84,9 +84,9 @@ module.exports = {
       * use the others to try out individual ideas
       **/
 
-      // './src/app/bootstrap'
+       './src/app/bootstrap'
 
-        './examples/simple-http/bootstrap'
+    //    './examples/simple-http/bootstrap'
 
       //'./examples/large-app/bootstrap'
     ]

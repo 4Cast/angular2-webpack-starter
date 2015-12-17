@@ -29,13 +29,14 @@ import {
 */
 
 
-import {fourcastService} from "../../services/fourcastService";
+import {fourcastService} from "../services/fourcastService";
 //import {ProjectDetail} from "./ProjectDetail";
 
 let template = require('./ProjectsList-simple.html');
 
 @Component({
-  selector: 'search'
+  selector: 'search',
+  providers: [fourcastService]
 })
 @View({
   directives: [NgIf, NgFor, RouterLink],
@@ -52,6 +53,7 @@ let template = require('./ProjectsList-simple.html');
 export class ProjectsList implements OnInit {
   query: string;
   results: Object;
+  loading: boolean;
 
     //public fourcast: fourcastService,
 
@@ -66,10 +68,27 @@ export class ProjectsList implements OnInit {
   }
 
   ngOnInit(){
-    debugger;
-      this.results = this.fourcast.makeRequest();
+    this.loading = true;
+
+      this.fourcast.search("http://localhost/rest/project")
+      .subscribe((res) =>{
+        this.results = res;
+        this.loading = false;
+      })
+
   }
 
+
+  makeRequest(){
+    this.loading = true;
+
+      this.fourcast.search("http://localhost/rest/project")
+      .subscribe((res) =>{
+        this.results = res;
+        this.loading = false;
+      })
+
+  }
   submit(query: string): void {
     this.router.navigate(["/Search", {query: query}]);
     this.search("project");
