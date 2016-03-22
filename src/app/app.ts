@@ -3,38 +3,13 @@
 /*
  * Angular 2
  */
-import {Component, View} from 'angular2/angular2';
-import {RouteConfig} from 'angular2/router';
 
-/*
- * Directives
- */
-import {CORE_DIRECTIVES, FORM_DIRECTIVES} from 'angular2/angular2';
-import {ROUTER_DIRECTIVES} from 'angular2/router';
-// Import all of our custom app directives
-import {APP_DIRECTIVES} from '../../examples/large-app/directives/directives';
+import {Component} from 'angular2/core';
+import {RouteConfig, Router} from 'angular2/router';
 
-/*
- * App Pipes
- * our collection of pipes registry
- */
-import {APP_PIPES} from '../../examples/large-app/pipes/pipes';
 
-/*
- * Components
- */
-// We use a folder if we want separate files
-import {Home} from '../../examples/simple-component/home/home';
-// Otherwise we only use one file for a component
-import {Dashboard} from '../../examples/large-app/components/dashboard';
-// A simple example of a Component using a Service
-import {Todo} from '../../examples/simple-todo/components/todo';
-
-// RxJs examples
-import {RxJsExamples} from '../../examples/large-app/components/rxjs_examples/rxjs-examples';
-
-import {ProjectsMain} from './components/projects/ProjectsMain'
-
+import {Home} from './home';
+import {AppState} from './app.service';
 
 // Use webpack's `require` to get files as a raw string using raw-loader
 const APP_STYLES = require('./app.css');
@@ -45,33 +20,43 @@ const APP_STYLES = require('./app.css');
  * Simple router component example
  */
 @Component({
-  selector: 'app', // without [ ] means we are selecting the tag directly
-  viewBindings: []
-})
-@View({
-  pipes:      [ APP_PIPES ],
-  directives: [ APP_DIRECTIVES ],
-  styles:     [ APP_STYLES ],
+
+  selector: 'app',
+  pipes: [ ],
+  providers: [ ],
+  directives: [ ],
+  styles: [`
+    nav ul {
+      display: inline;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 60px;
+    }
+    nav li {
+      display: inline;
+    }
+    nav li.active {
+      background-color: lightgray;
+    }
+  `],
   template: `
     <header>
-      <div layout="row" class="top-nav ac-default-theme">
-        <img src="angular-shield.png" alt="Angular2" height="54" width="54">
-        <span class="logo">{{ name | capitalize }} + Webpack</span>
+      <nav>
+        <h1>Hello {{ name }}</h1>
         <ul>
-          <li class="l-left">
-            <a [router-link]=" ['/Home'] " class="top-nav-button ac-default-theme">Home</a>
+          <li router-active>
+            <a [routerLink]=" ['Index'] ">Index</a>
           </li>
-          <li class="l-left">
-            <a [router-link]=" ['/Dashboard'] " class="top-nav-button ac-default-theme">Dashboard</a>
+          <li router-active>
+            <a [routerLink]=" ['Home'] ">Home</a>
           </li>
-          <li class="l-left">
-            <a [router-link]=" ['/Todo'] " class="top-nav-button ac-default-theme">Todo</a>
-          </li>
-          <li class="l-left">
-            <a [router-link]=" ['/Projects', 'List'] " class="top-nav-button ac-default-theme">Projects</a>
+          <li router-active>
+            <a [routerLink]=" ['About'] ">About</a>
           </li>
         </ul>
-      </div>
+      </nav>
+
     </header>
 
     <main>
@@ -79,19 +64,43 @@ const APP_STYLES = require('./app.css');
     </main>
 
     <footer>
-      WebPack Angular 2 Starter by <a href="https://twitter.com/AngularClass">@AngularClass</a>
+
+      WebPack Angular 2 Starter by <a [href]="url">@AngularClass</a>
+      <div>
+        <img [src]="angularclassLogo" width="10%">
+      </div>
     </footer>
+
+    <pre>this.state = {{ state | json }}</pre>
   `
 })
 @RouteConfig([
-  { path: '/',                  as: 'Home',          component: Home },
-  { path: '/dashboard',         as: 'Dashboard',     component: Dashboard },
-  { path: '/todo',              as: 'Todo',          component: Todo },
-  { path: '/projects/...', as: 'Projects', component: ProjectsMain }
+  { path: '/',      name: 'Index', component: Home, useAsDefault: true },
+  { path: '/home',  name: 'Home',  component: Home },
+  // Async load a component using Webpack's require with es6-promise-loader and webpack `require`
+  { path: '/about', name: 'About', loader: () => require('es6-promise!./about')('About') },
 ])
 export class App {
-  name: string;
-  constructor() {
-    this.name = 'angular'; // used in logo
+  angularclassLogo = 'assets/img/angularclass-avatar.png';
+  name = 'Angular 2 Webpack Starter';
+  url = 'https://twitter.com/AngularClass';
+
+  constructor(public appState: AppState) {}
+
+  get state() {
+    return this.appState.get();
   }
+
+  ngOnInit() {
+    console.log('Initial App State', this.state);
+  }
+
 }
+
+/*
+ * Please review the https://github.com/AngularClass/angular2-examples/ repo for
+ * more angular app examples that you may copy/paste
+ * (The examples may not be updated as quickly. Please open an issue on github for us to update it)
+ * For help or questions please contact us at @AngularClass on twitter
+ * or our chat on Slack at https://AngularClass.com/slack-join
+ */
