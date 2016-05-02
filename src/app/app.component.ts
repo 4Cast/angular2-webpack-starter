@@ -3,12 +3,14 @@
  * Angular 2
  */
 
-import {Component} from 'angular2/core';
+import {Component, ViewEncapsulation} from 'angular2/core';
+
 import {RouteConfig, Router} from 'angular2/router';
 
 
 import {Home} from './home';
 import {AppState} from './app.service';
+import {RouterActive} from './router-active';
 
 // Use webpack's `require` to get files as a raw string using raw-loader
 const APP_STYLES = require('./app.css');
@@ -23,44 +25,55 @@ const APP_STYLES = require('./app.css');
   selector: 'app',
   pipes: [ ],
   providers: [ ],
-  directives: [ ],
-  styles: [`
-    nav ul {
+  directives: [ RouterActive ],
+  encapsulation: ViewEncapsulation.None,
+  styles: [
+    require('normalize.css'),
+    `
+    md-toolbar ul {
       display: inline;
       list-style-type: none;
       margin: 0;
       padding: 0;
       width: 60px;
     }
-    nav li {
+    md-toolbar li {
       display: inline;
     }
-    nav li.active {
+    md-toolbar li.active {
       background-color: lightgray;
     }
   `],
   template: `
     <header>
-      <nav>
-        <h1>Hello {{ name }}</h1>
-        <ul>
-          <li router-active>
-            <a [routerLink]=" ['Index'] ">Index</a>
-          </li>
-          <li router-active>
-            <a [routerLink]=" ['Home'] ">Home</a>
-          </li>
-          <li router-active>
-            <a [routerLink]=" ['About'] ">About</a>
-          </li>
-        </ul>
-      </nav>
+
+      <md-toolbar color="primary">
+        <span>{{ name }}</span>
+        <nav>
+          <ul>
+            <li router-active>
+              <a [routerLink]=" ['Index'] ">Index</a>
+            </li>
+            |
+            <li router-active>
+              <a [routerLink]=" ['Home'] ">Home</a>
+            </li>
+            |
+            <li router-active>
+              <a [routerLink]=" ['About'] ">About</a>
+            </li>
+          </ul>
+        </nav>
+      </md-toolbar>
 
     </header>
+    <md-progress-bar mode="indeterminate" color="primary" *ngIf="loading"></md-progress-bar>
 
     <main>
       <router-outlet></router-outlet>
     </main>
+
+    <pre>this.appState.state = {{ appState.state | json }}</pre>
 
     <footer>
 
@@ -69,29 +82,27 @@ const APP_STYLES = require('./app.css');
         <img [src]="angularclassLogo" width="10%">
       </div>
     </footer>
-
-    <pre>this.state = {{ state | json }}</pre>
   `
 })
 @RouteConfig([
   { path: '/',      name: 'Index', component: Home, useAsDefault: true },
   { path: '/home',  name: 'Home',  component: Home },
   // Async load a component using Webpack's require with es6-promise-loader and webpack `require`
-  { path: '/about', name: 'About', loader: () => require('es6-promise!./about')('About') },
+  { path: '/about', name: 'About', loader: () => require('es6-promise!./about')('About') }
 ])
 export class App {
   angularclassLogo = 'assets/img/angularclass-avatar.png';
+  loading = false;
   name = 'Angular 2 Webpack Starter';
   url = 'https://twitter.com/AngularClass';
 
-  constructor(public appState: AppState) {}
+  constructor(
+    public appState: AppState) {
 
-  get state() {
-    return this.appState.get();
   }
 
   ngOnInit() {
-    console.log('Initial App State', this.state);
+    console.log('Initial App State', this.appState.state);
   }
 
 }
