@@ -1,4 +1,3 @@
-/// <reference path="../../src/typings/_custom.d.ts" />
 
 /*
  * Angular 2
