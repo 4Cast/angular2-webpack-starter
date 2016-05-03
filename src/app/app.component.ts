@@ -6,8 +6,9 @@
  * Angular 2 decorators and services
  */
 
-import {Component, OnInit} from 'angular2/core';
-import {RouteConfig, Router, ROUTER_DIRECTIVES, RouterLink, OnActivate, ComponentInstruction} from 'angular2/router';
+
+import {Component, OnInit, ViewEncapsulation} from 'angular2/core';
+import {RouteConfig, Router, ROUTER_DIRECTIVES, RouterLink, OnActivate, ComponentInstruction} from 'angular2/router-deprecated';
 import {FORM_PROVIDERS} from 'angular2/common';
 import {FourcastService} from '../services/fourcast-service';
 
@@ -108,7 +109,7 @@ export class App implements OnInit  {
   //   constructor() {
   //
   //   }
-  // >>>>>>> upstream/master
+
 
 
 
