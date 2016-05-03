@@ -2,9 +2,10 @@
  * Angular
  */
 
- import {Component} from 'angular2/core';
- import {NgForm, NgIf}    from 'angular2/common';
- import {FORM_DIRECTIVES, FormBuilder, ControlGroup, Control, Validators, AbstractControl} from "angular2/common";
+ import {Component} from '@angular/core';
+ import {NgForm, NgIf}    from '@angular/common';
+ import {FORM_DIRECTIVES, FormBuilder, ControlGroup, Control, Validators, AbstractControl} from "@angular/common";
+
  import {FourcastService} from "../../../../../services/fourcast-service";
 /*
  * Services

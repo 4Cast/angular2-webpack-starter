@@ -1,5 +1,7 @@
-import { Component, View, Inject, Input, Output, OnDestroy, OnChanges, OnInit } from 'angular2/core';
-import { ElementRef } from 'angular2/core';
+
+import { Component, View, Inject, Input, Output, OnDestroy, OnChanges, OnInit } from '@angular/core';
+import { ElementRef } from '@angular/core';
+
 
 @Component({
   selector: 'kendoDropDownList',
@@ -8,7 +10,9 @@ import { ElementRef } from 'angular2/core';
   template: '<p>This is where the content goes</p>'
 })
 
-//a2 lifecycle https://github.com/angular/angular/blob/master/modules/angular2/lifecycle_hooks.ts
+
+//a2 lifecycle https://github.com/angular/angular/blob/master/modules/@angular/lifecycle_hooks.ts
+
 export class KendoDropDownList implements OnInit, OnChanges, OnDestroy{
 
   private _element: ElementRef;

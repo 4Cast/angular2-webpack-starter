@@ -1,6 +1,8 @@
-import {Component, DynamicComponentLoader, ElementRef, OnInit} from 'angular2/core'
+
+import {Component, DynamicComponentLoader, ElementRef, OnInit} from '@angular/core'
 import {FourcastService} from "../../../../services/fourcast-service";
-import {Response} from "angular2/http";
+import {Response} from "@angular/http";
+
 import {KendoService} from "../../../../services/kendo-service";
 import {KendoColumn} from '../../../../services/view-definition';
 

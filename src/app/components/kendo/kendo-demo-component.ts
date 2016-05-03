@@ -1,4 +1,6 @@
-import { Component, ElementRef, OnInit, OnChanges, OnDestroy} from 'angular2/core';
+
+import { Component, ElementRef, OnInit, OnChanges, OnDestroy} from '@angular/core';
+
 
 declare var jQuery:JQueryStatic;
 
@@ -34,7 +36,7 @@ export class KendoComponent implements OnInit, OnChanges, OnDestroy {
     this.domElement = elementRef.nativeElement;
     this.initialised = false;
     jQuery(this.domElement).attr('style', 'background-color: blue;');
-  
+
   }
 
 ngOnInit(){}

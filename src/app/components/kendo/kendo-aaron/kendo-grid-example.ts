@@ -1,4 +1,6 @@
-import {AfterViewInit, Component, DynamicComponentLoader, ElementRef} from 'angular2/core'
+
+import {AfterViewInit, Component, DynamicComponentLoader, ElementRef} from '@angular/core'
+
 
 import {CustomActionDropdown} from './custom-action-dropdown';
 

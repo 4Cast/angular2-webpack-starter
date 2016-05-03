@@ -1,5 +1,7 @@
-import {Component, Output, EventEmitter} from 'angular2/core';
-import {Form} from 'angular2/common';
+
+import {Component, Output, EventEmitter} from '@angular/core';
+import {Form} from '@angular/common';
+
 import {CostCode} from './cost-code';
 import {CostCodeService} from '../../../../services/cost-code-service';
 import {Project} from '../../../class.definitions/project';

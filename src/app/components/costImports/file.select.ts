@@ -1,7 +1,9 @@
-import { Component, ElementRef, OnInit, EventEmitter, Output } from 'angular2/core';
-import {NgIf, NgClass} from 'angular2/common';
-import {Http, Response} from 'angular2/http';
-import {Headers, RequestOptions} from 'angular2/http';
+
+import { Component, ElementRef, OnInit, EventEmitter, Output } from '@angular/core';
+import {NgIf, NgClass} from '@angular/common';
+import {Http, Response} from '@angular/http';
+import {Headers, RequestOptions} from '@angular/http';
+
 import {Observable}     from 'rxjs/Observable';
 import {FileItem} from './file-item';
 // todo: filters

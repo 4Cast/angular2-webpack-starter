@@ -2,11 +2,13 @@
 /*
  * Angular
  */
-import {Component, OnInit, Injector, Pipe} from "angular2/core";
-import {NgIf} from "angular2/common";
-import {FORM_DIRECTIVES, FormBuilder, ControlGroup, Control, Validators, AbstractControl} from "angular2/common";
-import {Response} from "angular2/http";
-import {RouteParams, Router, RouterLink, LocationStrategy, RouteConfig, RouteData, OnActivate, ComponentInstruction} from "angular2/router";
+
+import {Component, OnInit, Injector, Pipe} from "@angular/core";
+import {NgIf} from "@angular/common";
+import {FORM_DIRECTIVES, FormBuilder, ControlGroup, Control, Validators, AbstractControl} from "@angular/common";
+import {Response} from "@angular/http";
+import {RouteParams, Router, RouterLink, LocationStrategy, RouteConfig, RouteData, OnActivate, ComponentInstruction} from "@angular/router-deprecated";
+
 
 
 /*

@@ -1,4 +1,6 @@
-import {Component, OnInit, View} from 'angular2/core'
+
+import {Component, OnInit, View} from '@angular/core'
+
 
 /**
  * Example of a templated grid column with access to Component event functions

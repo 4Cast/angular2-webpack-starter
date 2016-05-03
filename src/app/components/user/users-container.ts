@@ -1,8 +1,7 @@
 
+import {Component} from "@angular/core";
+import {Router, RouterOutlet, RouteConfig} from "@angular/router-deprecated";
 
-
-import {Component} from "angular2/core";
-import {Router, RouterOutlet, RouteConfig} from "angular2/router";
 
 
 

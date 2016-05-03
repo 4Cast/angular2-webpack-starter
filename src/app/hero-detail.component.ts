@@ -1,10 +1,12 @@
-import {Component} from 'angular2/core';
+
+import {Component} from '@angular/core';
+
 import {Hero} from './hero';
 
 @Component({
   selector: 'my-hero-detail',
   template: `
-    
+
       <h2>Chris details!</h2>
       <div><label>id: </label>3</div>
       <div>

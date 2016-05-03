@@ -1,4 +1,6 @@
-import {Component, OnInit} from 'angular2/core';
+
+import {Component, OnInit} from '@angular/core';
+
 import {KendoGrid} from '../kendo/kendo-grid';
 import {ViewDefinition} from '../../../services/view-definition';
 import {KendoColumn} from '../../../services/view-definition';
@@ -23,7 +25,7 @@ export class SuppliersList {
   }
 }
 
-var COLUMNS: any[] = [ 
+var COLUMNS: any[] = [
   new KendoColumn('Supplier Name', 'companyName', 120, true),
   new KendoColumn('Code', 'supplierCode', 150, true),
   new KendoColumn('ABN', 'abn', 80, true)

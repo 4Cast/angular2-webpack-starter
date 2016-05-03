@@ -1,5 +1,7 @@
-// import {Component} from 'angular2/core';
-// import {FORM_DIRECTIVES, ControlGroup, Control} from 'angular2/common'
+
+// import {Component} from '@angular/core';
+// import {FORM_DIRECTIVES, ControlGroup, Control} from '@angular/common'
+
 // import {KendoValueAccessor} from 'kendo/angular2';
 //
 //

@@ -1,7 +1,9 @@
-import {Component, OnInit} from 'angular2/core';
-import {NgForm}    from 'angular2/common';
-import {RouteData, Router, RouteParams} from 'angular2/router';
-import {FORM_DIRECTIVES, FormBuilder, ControlGroup, Control, Validators, AbstractControl} from "angular2/common";
+
+import {Component, OnInit} from '@angular/core';
+import {NgForm}    from '@angular/common';
+import {RouteData, Router, RouteParams} from '@angular/router-deprecated';
+import {FORM_DIRECTIVES, FormBuilder, ControlGroup, Control, Validators, AbstractControl} from "@angular/common";
+
 import {FourcastService} from "../../../../services/fourcast-service";
 
 const DETAIL = require('./cost.code.detail.html');

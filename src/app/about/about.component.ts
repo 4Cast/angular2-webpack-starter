@@ -1,4 +1,6 @@
-import {Component} from 'angular2/core';
+
+import {Component} from '@angular/core';
+
 
 /*
  * We're loading this component asynchronously
@@ -16,9 +18,14 @@ console.log('`About` component loaded asynchronously');
     }
   `],
   template: `
+
+  <md-card>
     <h1>
       patrick@AngularClass.com
     </h1>
+  </md-card>
+
+
   `
 })
 export class About {

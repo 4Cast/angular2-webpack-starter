@@ -1,14 +1,15 @@
+import {Injectable, provide} from "@angular/core";
+import {Http, Response} from "@angular/http";
+import {Headers, RequestOptions} from '@angular/http';
 
-
-import {Injectable, provide} from "angular2/core";
-import {Http, Response} from "angular2/http";
-import {Headers, RequestOptions} from 'angular2/http';
 import * as Rx  from 'rxjs/Rx';
 import {ViewDefinition} from './view-definition'
 import {CostImport} from '../app/class.definitions/cost-import';
 import {Project} from '../app/class.definitions/project';
 
-//import {Promise} from "angular2/src/core/facade/async";
+
+//import {Promise} from "@angular/src/core/facade/async";
+
 
 /**
  * FourcastService works querying the fourcast Web API
@@ -52,7 +53,7 @@ private _projectId: string = '39A42D1AC14C4543A8FF59F314415A3A'; //default proje
   initProject(): Rx.Observable<any>{
     let id = '39A42D1AC14C4543A8FF59F314415A3A'
     return this.getEntity('project', id);
-    
+
   }
 
   setUrl(url:string){

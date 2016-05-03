@@ -1,5 +1,7 @@
-import {Component, Input, Output, EventEmitter, OnInit, OnChanges, SimpleChange, ElementRef} from 'angular2/core';
-import {NgIf, NgFor, NgClass, NgStyle, NgModel} from 'angular2/common';
+
+import {Component, Input, Output, EventEmitter, OnInit, OnChanges, SimpleChange, ElementRef} from '@angular/core';
+import {NgIf, NgFor, NgClass, NgStyle, NgModel} from '@angular/common';
+
 import {MyDate, MyMonth} from './interfaces';
 // import {MDP} from './template/mdp';
 

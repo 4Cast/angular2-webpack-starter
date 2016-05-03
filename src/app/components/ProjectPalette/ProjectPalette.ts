@@ -1,6 +1,8 @@
-import {Component, OnInit} from 'angular2/core';
+
+import {Component, OnInit} from '@angular/core';
 import {FourcastService} from '../../../services/fourcast-service'
-import {Response} from "angular2/http";
+import {Response} from "@angular/http";
+
 
 const PALETTE_TEMPLATE = require('./project-palette.html');
 

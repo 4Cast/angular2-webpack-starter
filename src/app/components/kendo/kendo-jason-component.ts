@@ -1,7 +1,9 @@
 // 2016/03/21 - found this here: http://www.telerik.com/forums/problem-with-kendovalueaccessor-in-angular-2-0-0-beta-0
 // See almost to the bottom, post from Jason
 
-import {Component} from 'angular2/core';
+
+import {Component} from '@angular/core';
+
 import {KendoValueAccessor} from './kendo_value_accessor';
 
 

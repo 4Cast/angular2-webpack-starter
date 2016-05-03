@@ -3,9 +3,11 @@
 /*
  * Angular
  */
-import {Component, View, OnInit } from "angular2/core";
-import{NgFor, NgIf} from "angular2/common";
-import {Response} from "angular2/http";
+
+import {Component, View, OnInit } from "@angular/core";
+import{NgFor, NgIf} from "@angular/common";
+import {Response} from "@angular/http";
+
 //import {NgGrid, NgGridItem} from "angular2-grid/src/NgGrid";
 import {
   Router,
@@ -13,7 +15,9 @@ import {
   RouterOutlet,
   RouteConfig,
   RouteParams,
-} from "angular2/router";
+
+} from "@angular/router-deprecated";
+
 
 /*
  * Services

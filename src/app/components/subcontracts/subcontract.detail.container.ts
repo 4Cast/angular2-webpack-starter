@@ -3,15 +3,16 @@
 /*
  * Angular
  */
-import {Component} from "angular2/core";
+import {Component} from "@angular/core";
+
 import {
   Router,
   RouterOutlet,
   RouteConfig,
   RouterLink,
-  RouteParams, OnActivate, ComponentInstruction
-} from "angular2/router";
-import {Response} from "angular2/http";
+  RouteParams, OnActivate, ComponentInstruction} from "@angular/router-deprecated";
+import {Response} from "@angular/http";
+
 
 import {SubcontractService} from "../../../services/subcontract-service";
 

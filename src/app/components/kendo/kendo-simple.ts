@@ -1,4 +1,6 @@
-import {Component, OnInit} from 'angular2/core';
+
+import {Component, OnInit} from '@angular/core';
+
 
 declare var jQuery:JQueryStatic;
 
@@ -19,7 +21,7 @@ declare var jQuery:JQueryStatic;
 export class KendoSimple implements OnInit {
 
 ngOnInit(){
-  debugger;
+
    jQuery("#primaryTextButton").kendoButton();
 }
 

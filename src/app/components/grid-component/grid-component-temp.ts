@@ -1,9 +1,11 @@
-import {Component, OnInit} from 'angular2/core';
-import {Response} from "angular2/http";
+
+import {Component, OnInit} from '@angular/core';
+import {Response} from "@angular/http";
 import {FourcastService} from "../../../services/fourcast-service";
 import {AgGridNg2} from 'ag-grid-ng2/main';
 import {GridOptions} from 'ag-grid/main';
-import {Router, RouteParams, OnActivate, ComponentInstruction} from "angular2/router"
+import {Router, RouteParams, OnActivate, ComponentInstruction} from "@angular/router-deprecated"
+
 
 const APP_TEMPLATE = require('./grid-component.html')
 

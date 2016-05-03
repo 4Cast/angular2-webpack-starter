@@ -1,4 +1,6 @@
-import {Injectable} from 'angular2/core';
+
+import {Injectable} from '@angular/core';
+
 import {FourcastService} from './fourcast-service';
 import * as Rx  from 'rxjs/Rx';
 

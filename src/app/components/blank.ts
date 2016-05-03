@@ -1,4 +1,6 @@
-import {Component, OnInit} from 'angular2/core';
+
+import {Component, OnInit} from '@angular/core';
+
 
 @Component({
   selector: 'app', // <app></app>

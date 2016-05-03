@@ -3,13 +3,17 @@
 /*
  * Angular
  */
-import {Component, View} from "angular2/core";
+
+import {Component, View} from "@angular/core";
+
 import {
   Router,
   RouterOutlet,
   RouteConfig,
   RouterLink
-} from "angular2/router";
+
+} from "@angular/router-deprecated";
+
 
 import {ProjectsList} from "./ProjectsList";
 import {ProjectDetail} from "./ProjectDetail";

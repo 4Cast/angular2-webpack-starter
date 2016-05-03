@@ -1,4 +1,6 @@
-import {Component, Input, OnDestroy} from 'angular2/core';
+
+import {Component, Input, OnDestroy} from '@angular/core';
+
 
 @Component({
   selector: 'accordion',
@@ -11,11 +13,11 @@ import {Component, Input, OnDestroy} from 'angular2/core';
 })
 export class Accordion {
   groups: Array<AccordionGroup> = [];
-  
+
   addGroup(group: AccordionGroup): void {
     this.groups.push(group);
   }
-  
+
   closeOthers(openGroup: AccordionGroup): void {
     this.groups.forEach((group: AccordionGroup) => {
       if (group !== openGroup) {
@@ -23,7 +25,7 @@ export class Accordion {
       }
     });
   }
-  
+
   removeGroup(group: AccordionGroup): void {
     const index = this.groups.indexOf(group);
     if (index !== -1) {
@@ -52,9 +54,9 @@ export class Accordion {
 })
 export class AccordionGroup implements OnDestroy {
   private _isOpen:boolean = false;
-  
+
   @Input() heading: string;
-  
+
   @Input()
   set isOpen(value: boolean) {
     this._isOpen = value;
@@ -62,19 +64,19 @@ export class AccordionGroup implements OnDestroy {
       this.accordion.closeOthers(this);
     }
   }
-  
+
   get isOpen() {
     return this._isOpen;
   }
-  
+
   constructor(private accordion: Accordion) {
     this.accordion.addGroup(this);
   }
-  
+
   ngOnDestroy() {
     this.accordion.removeGroup(this);
   }
-  
+
   toggleOpen(event: MouseEvent): void {
     event.preventDefault();
     this.isOpen = !this.isOpen;

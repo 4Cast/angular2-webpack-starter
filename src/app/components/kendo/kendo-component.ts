@@ -1,10 +1,13 @@
-import { Component, View, Inject, Input, Output, OnInit, OnChanges, OnDestroy } from 'angular2/core';
-import { ElementRef } from 'angular2/core';
+
+import { Component, View, Inject, Input, Output, OnInit, OnChanges, OnDestroy } from '@angular/core';
+import { ElementRef } from '@angular/core';
+
 
 
 declare var jQuery:JQueryStatic;
 
-//a2 lifecycle https://github.com/angular/angular/blob/master/modules/angular2/lifecycle_hooks.ts
+//a2 lifecycle https://github.com/angular/angular/blob/master/modules/@angular/lifecycle_hooks.ts
+
 export class KendoComponent implements OnInit, OnChanges, OnDestroy {
     static get parameters() {
         return [[ElementRef]];

@@ -1,7 +1,9 @@
 /**
  * Created by Tareq Boulakjar. from angulartypescript.com
  */
-import {Component} from 'angular2/core';
+
+import {Component} from '@angular/core';
+
 
 import {Accordion, AccordionGroup} from '../../library/angular-2-accordion/accordion';
 

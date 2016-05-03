@@ -8,7 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('angular2/core');
+
+var core_1 = require('@angular/core');
+
 var kendo_component_1 = require('./kendo-component');
 var kendoContainer = (function () {
     function kendoContainer() {
@@ -18,7 +20,7 @@ var kendoContainer = (function () {
             selector: "kendo-container",
             template: "<div>Hey, this is a cool app!</div>\n        <div data-role='grid'></div>\n    ",
             directives: [kendo_component_1.KendoGrid]
-        }), 
+        }),
         __metadata('design:paramtypes', [])
     ], kendoContainer);
     return kendoContainer;

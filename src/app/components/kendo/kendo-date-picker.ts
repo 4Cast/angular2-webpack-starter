@@ -1,4 +1,6 @@
-import {Component, DynamicComponentLoader, ElementRef, OnInit} from 'angular2/core'
+
+import {Component, DynamicComponentLoader, ElementRef, OnInit} from '@angular/core'
+
 
 @Component({
   directives:[],
