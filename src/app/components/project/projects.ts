@@ -2,8 +2,8 @@
 /*
  * Angular
  */
-import {Component} from "angular2/core";
-import {RouteConfig, RouterOutlet, Router} from "angular2/router";
+import {Component} from "@angular/core";
+import {RouteConfig, RouterOutlet, Router} from "@angular/router-deprecated";
 
 import {ProjectsList} from './projectList/projects.list';
 import {ProjectDetailContainer} from "./projectDetail/project.detail.container";

@@ -11,8 +11,8 @@ import {
   FormBuilder,
   CORE_DIRECTIVES,
   FORM_DIRECTIVES
-} from 'angular2/angular2';
-import {ROUTER_DIRECTIVES} from 'angular2/router';
+} from '@angular/angular2';
+import {ROUTER_DIRECTIVES} from '@angular/router-deprecated';
 
 /*
  * Services

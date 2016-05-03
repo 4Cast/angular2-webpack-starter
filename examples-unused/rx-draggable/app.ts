@@ -1,7 +1,7 @@
 /// <reference path="../../src/typings/_custom.d.ts" />
 
 // Angular 2
-import {Component, View} from 'angular2/angular2';
+import {Component, View} from '@angular/angular2';
 
 import {DragElement} from './components/drag-element';
 

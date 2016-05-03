@@ -1,8 +1,8 @@
 /// <reference path="../../../src/typings/_custom.d.ts" />
 
-import {Directive, EventEmitter, HostListener} from 'angular2/angular2';
-import {DOM} from 'angular2/src/core/dom/dom_adapter';
-import {ElementRef} from 'angular2/core';
+import {Directive, EventEmitter, HostListener} from '@angular/angular2';
+import {DOM} from '@angular/src/core/dom/dom_adapter';
+import {ElementRef} from '@angular/core';
 
 
 @Directive({

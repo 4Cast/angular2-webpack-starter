@@ -3,17 +3,17 @@
 /*
  * Angular
  */
-import {Component} from "angular2/core";
-import {NgIf} from 'angular2/common';
+import {Component} from "@angular/core";
+import {NgIf} from '@angular/common';
 import {
   Router,
   RouterOutlet,
   RouteConfig,
   RouterLink,
   RouteParams, OnActivate, ComponentInstruction
-} from "angular2/router";
+} from "@angular/router-deprecated";
 
-import {Response} from "angular2/http";
+import {Response} from "@angular/http";
 import {FourcastService} from "../../../../services/fourcast-service";
 //import {Project} from "../../../class.definitions/project";
 

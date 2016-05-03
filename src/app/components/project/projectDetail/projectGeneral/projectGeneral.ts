@@ -3,10 +3,10 @@
  * Angular
  */
 
- import {Component} from 'angular2/core';
- import {NgForm}    from 'angular2/common';
- import {RouteData} from 'angular2/router';
- import {FORM_DIRECTIVES, FormBuilder, ControlGroup, Control, Validators, AbstractControl} from "angular2/common";
+ import {Component} from '@angular/core';
+ import {NgForm}    from '@angular/common';
+ import {RouteData} from '@angular/router-deprecated';
+ import {FORM_DIRECTIVES, FormBuilder, ControlGroup, Control, Validators, AbstractControl} from "@angular/common";
  import {FourcastService} from "../../../../../services/fourcast-service";
  import {MyDatePicker} from '../../../widgets/my-date-picker/mydatepicker';
  import {KendoDatePicker} from '../../../kendo/kendo-date-picker';

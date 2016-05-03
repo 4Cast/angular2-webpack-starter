@@ -1,5 +1,5 @@
 /// <reference path="../../../src/typings/_custom.d.ts" />
-import {provide, Injectable} from 'angular2/angular2';
+import {provide, Injectable} from '@angular/angular2';
 
 @Injectable()
 export class Message {

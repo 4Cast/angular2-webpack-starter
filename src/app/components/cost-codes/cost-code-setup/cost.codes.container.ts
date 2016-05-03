@@ -2,8 +2,8 @@
 /*
  * Angular
  */
-import {Component} from "angular2/core";
-import {RouteConfig, RouterOutlet} from "angular2/router";
+import {Component} from "@angular/core";
+import {RouteConfig, RouterOutlet} from "@angular/router-deprecated";
 
 import {CostCodesList} from './cost.codes.list';
 import {CostCodeDetail} from "./cost-code-detail/cost.code.detail";

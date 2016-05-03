@@ -1,6 +1,6 @@
 // Angular 2
-import * as angular from 'angular2/angular2';
-import {Component, View} from 'angular2/angular2';
+import * as angular from '@angular/angular2';
+import {Component, View} from '@angular/angular2';
 
 @Component({
   // The selector is what angular internally uses

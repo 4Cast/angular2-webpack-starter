@@ -1,5 +1,5 @@
 // Angular 2
-import {bootstrap} from 'angular2/angular2';
+import {bootstrap} from '@angular/angular2';
 import {
   Component,
   View,
@@ -7,7 +7,7 @@ import {
   ElementRef,
   Attribute,
   NgStyle
-} from 'angular2/angular2';
+} from '@angular/angular2';
 
 
 @Directive({

@@ -2,7 +2,7 @@
 /*
  * Angular
  */
-import {Component} from "angular2/core";
+import {Component} from "@angular/core";
 
 @Component({
   selector: "cost-codes-setup",

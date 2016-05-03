@@ -1,7 +1,7 @@
-import {Injectable, Provider} from 'angular2/core';
+import {Injectable, Provider} from '@angular/core';
 import {FourcastService} from './fourcast-service';
 import * as Rx  from 'rxjs/Rx';
-import {Http} from "angular2/http";
+import {Http} from "@angular/http";
 
 @Injectable()
 export class CostCodeService extends FourcastService{

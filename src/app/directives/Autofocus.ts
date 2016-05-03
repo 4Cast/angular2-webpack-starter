@@ -1,6 +1,6 @@
 /// <reference path="../../../src/typings/_custom.d.ts" />
-import {Directive, ElementRef} from 'angular2/angular2';
-import {Renderer} from 'angular2/angular2';
+import {Directive, ElementRef} from '@angular/angular2';
+import {Renderer} from '@angular/angular2';
 
 // Simple example directive that fixes autofocus problem with multiple views
 @Directive({

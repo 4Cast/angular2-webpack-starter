@@ -3,9 +3,9 @@
  * Angular 2
  */
 
-import {Component, ViewEncapsulation} from 'angular2/core';
+import {Component, ViewEncapsulation} from '@angular/core';
 
-import {RouteConfig, Router} from 'angular2/router';
+import {RouteConfig, Router} from '@angular/router-deprecated';
 
 
 import {Home} from './home';

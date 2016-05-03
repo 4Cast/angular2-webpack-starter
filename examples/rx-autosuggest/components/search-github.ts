@@ -1,8 +1,8 @@
 /// <reference path="../../../src/typings/_custom.d.ts" />
 
 // Angular 2
-import {Component} from 'angular2/angular2';
-import {CORE_DIRECTIVES, FORM_DIRECTIVES} from 'angular2/angular2';
+import {Component} from '@angular/angular2';
+import {CORE_DIRECTIVES, FORM_DIRECTIVES} from '@angular/angular2';
 
 import {AcAutosuggestGithub} from '../directives/ac-autosuggest';
 

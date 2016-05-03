@@ -1,7 +1,7 @@
 /// <reference path="../../src/typings/_custom.d.ts" />
 
 // Angular 2
-import {Component} from 'angular2/angular2';
+import {Component} from '@angular/angular2';
 
 import {SearchGithub} from './components/search-github';
 

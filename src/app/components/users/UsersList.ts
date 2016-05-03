@@ -3,13 +3,13 @@
 /*
  * Angular
  */
-import {Component, View, OnInit, NgFor, NgIf} from "angular2/angular2";
-import {Response} from "angular2/http";
+import {Component, View, OnInit, NgFor, NgIf} from "@angular/angular2";
+import {Response} from "@angular/http";
 import {
   Router,
   RouterLink,
   RouteParams,
-} from "angular2/router";
+} from "@angular/router-deprecated";
 
 /*
  * Services

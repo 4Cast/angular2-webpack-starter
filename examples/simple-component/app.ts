@@ -1,7 +1,7 @@
 /// <reference path="../../src/typings/_custom.d.ts" />
 
 // Angular 2
-import {Component, View} from 'angular2/angular2';
+import {Component, View} from '@angular/angular2';
 
 import {Home} from './home/home';
 import {Away} from './away/away';

@@ -1,8 +1,8 @@
 /// <reference path="../../src/typings/_custom.d.ts" />
 
 // Angular 2
-import {Component, View} from 'angular2/angular2';
-import {Http, Response} from 'angular2/http';
+import {Component, View} from '@angular/angular2';
+import {Http, Response} from '@angular/http';
 import * as Rx  from '@reactivex/rxjs';
 
 import {simpleHttpService} from './simpleHttpService';

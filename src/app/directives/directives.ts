@@ -2,8 +2,8 @@
 /*
  * Angular 2
  */
-import {CORE_DIRECTIVES, FORM_DIRECTIVES} from 'angular2/angular2';
-import {ROUTER_DIRECTIVES} from 'angular2/router';
+import {CORE_DIRECTIVES, FORM_DIRECTIVES} from '@angular/angular2';
+import {ROUTER_DIRECTIVES} from '@angular/router-deprecated';
 
 /*
  * App

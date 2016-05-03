@@ -3,10 +3,10 @@
 /*
  * Angular
  */
-import {Component, View, OnInit, NgIf} from "angular2/angular2";
-import {FORM_DIRECTIVES, FormBuilder, ControlGroup, Control, Validators, AbstractControl} from "angular2/angular2";
-import {Response} from "angular2/http";
-import {RouteParams, RouterLink, LocationStrategy} from "angular2/router";
+import {Component, View, OnInit, NgIf} from "@angular/angular2";
+import {FORM_DIRECTIVES, FormBuilder, ControlGroup, Control, Validators, AbstractControl} from "@angular/angular2";
+import {Response} from "@angular/http";
+import {RouteParams, RouterLink, LocationStrategy} from "@angular/router-deprecated";
 
 /*
  * Services

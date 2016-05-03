@@ -1,6 +1,6 @@
-import {Directive, ElementRef, Renderer, Self, forwardRef, Provider} from 'angular2/core';
-import {NG_VALUE_ACCESSOR, ControlValueAccessor} from 'angular2/common';
-import {isBlank, CONST_EXPR} from 'angular2/src/facade/lang';
+import {Directive, ElementRef, Renderer, Self, forwardRef, Provider} from '@angular/core';
+import {NG_VALUE_ACCESSOR, ControlValueAccessor} from '@angular/common';
+import {isBlank, CONST_EXPR} from '@angular/src/facade/lang';
 
 const KENDO_VALUE_ACCESSOR = CONST_EXPR(new Provider(
     NG_VALUE_ACCESSOR, {useExisting: forwardRef(() => KendoValueAccessor), multi: true}));

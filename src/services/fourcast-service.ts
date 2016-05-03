@@ -1,14 +1,14 @@
 
 
-import {Injectable, provide} from "angular2/core";
-import {Http, Response} from "angular2/http";
-import {Headers, RequestOptions} from 'angular2/http';
+import {Injectable, provide} from "@angular/core";
+import {Http, Response} from "@angular/http";
+import {Headers, RequestOptions} from '@angular/http';
 import * as Rx  from 'rxjs/Rx';
 import {ViewDefinition} from './view-definition'
 import {CostImport} from '../app/class.definitions/cost-import';
 import {Project} from '../app/class.definitions/project';
 
-//import {Promise} from "angular2/src/core/facade/async";
+//import {Promise} from "@angular/src/core/facade/async";
 
 /**
  * FourcastService works querying the fourcast Web API

@@ -1,10 +1,10 @@
 /// <reference path="../../src/typings/_custom.d.ts" />
 
 // Angular 2
-import {bootstrap} from 'angular2/angular2';
+import {bootstrap} from '@angular/angular2';
 
-import {ELEMENT_PROBE_BINDINGS} from 'angular2/angular2'
-import {HTTP_BINDINGS} from 'angular2/http';
+import {ELEMENT_PROBE_BINDINGS} from '@angular/angular2'
+import {HTTP_BINDINGS} from '@angular/http';
 
 /*
  * App

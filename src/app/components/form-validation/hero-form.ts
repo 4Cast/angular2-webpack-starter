@@ -1,5 +1,5 @@
-import {Component} from 'angular2/core';
-import {NgForm, NgIf}    from 'angular2/common';
+import {Component} from '@angular/core';
+import {NgForm, NgIf}    from '@angular/common';
 import { Hero }    from './hero';
 
 const TEMPLATE = require('./hero-form.component.html');

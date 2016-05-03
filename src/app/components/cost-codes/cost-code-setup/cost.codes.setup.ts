@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild} from 'angular2/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {KendoGrid} from '../../kendo/kendo-grid';
 import {ViewDefinition} from '../../../../services/view-definition';
 import {KendoColumn} from '../../../../services/view-definition';

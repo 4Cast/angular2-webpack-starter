@@ -1,9 +1,9 @@
 /// <reference path="../../../src/typings/_custom.d.ts" />
 
 // Angular 2
-import {Component} from 'angular2/angular2';
-import {CORE_DIRECTIVES, FORM_DIRECTIVES} from 'angular2/angular2';
-import {ROUTER_DIRECTIVES} from 'angular2/router';
+import {Component} from '@angular/angular2';
+import {CORE_DIRECTIVES, FORM_DIRECTIVES} from '@angular/angular2';
+import {ROUTER_DIRECTIVES} from '@angular/router-deprecated';
 
 // Services
 import {GameService}  from '../services/GameService';

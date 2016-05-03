@@ -1,6 +1,6 @@
 // Angular 2
-import {bootstrap} from 'angular2/angular2';
-import {Component, View, Pipe} from 'angular2/angular2';
+import {bootstrap} from '@angular/angular2';
+import {Component, View, Pipe} from '@angular/angular2';
 
 @Pipe({
   name: 'capitalize'

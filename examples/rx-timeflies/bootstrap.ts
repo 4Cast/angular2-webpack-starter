@@ -1,11 +1,11 @@
 /// <reference path="../../src/typings/_custom.d.ts" />
 
 // Angular 2
-import {bootstrap} from 'angular2/angular2';
+import {bootstrap} from '@angular/angular2';
 
-import {FORM_PROVIDERS, ELEMENT_PROBE_PROVIDERS} from 'angular2/angular2'
-import {ROUTER_PROVIDERS} from 'angular2/router';
-import {HTTP_PROVIDERS} from 'angular2/http';
+import {FORM_PROVIDERS, ELEMENT_PROBE_PROVIDERS} from '@angular/angular2'
+import {ROUTER_PROVIDERS} from '@angular/router-deprecated';
+import {HTTP_PROVIDERS} from '@angular/http';
 
 import {App} from './app';
 

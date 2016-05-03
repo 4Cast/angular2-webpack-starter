@@ -1,5 +1,5 @@
 /// <reference path="../../../src/typings/_custom.d.ts" />
-import {Component, View} from 'angular2/angular2';
+import {Component, View} from '@angular/angular2';
 import {Away} from './away';
 
 @Component({

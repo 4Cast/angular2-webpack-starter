@@ -1,7 +1,7 @@
-import {Component, OnInit, ElementRef,} from 'angular2/core';
+import {Component, OnInit, ElementRef,} from '@angular/core';
 import {FileSelect} from './file.select';
-import {NgIf} from 'angular2/common';
-import {NgForm}    from 'angular2/common';
+import {NgIf} from '@angular/common';
+import {NgForm}    from '@angular/common';
 import {CostImport, CostImportService} from '../../../services/cost-import-service';
 import {FourcastService} from '../../../services/fourcast-service';
 import {FileUploader} from './file-uploader';

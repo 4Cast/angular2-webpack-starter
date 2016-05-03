@@ -1,6 +1,6 @@
-import {Component, OnInit} from 'angular2/core';
+import {Component, OnInit} from '@angular/core';
 import {FILE_UPLOAD_DIRECTIVES, FileUploader} from 'ng2-file-upload';
-import {CORE_DIRECTIVES, FORM_DIRECTIVES, NgClass, NgStyle} from 'angular2/common';
+import {CORE_DIRECTIVES, FORM_DIRECTIVES, NgClass, NgStyle} from '@angular/common';
 
 
 const TEMPLATE: string = require('./fileUploadDemo.html');

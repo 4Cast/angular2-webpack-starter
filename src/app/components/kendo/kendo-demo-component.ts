@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, OnChanges, OnDestroy} from 'angular2/core';
+import { Component, ElementRef, OnInit, OnChanges, OnDestroy} from '@angular/core';
 
 declare var jQuery:JQueryStatic;
 

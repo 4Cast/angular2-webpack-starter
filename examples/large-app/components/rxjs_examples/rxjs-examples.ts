@@ -1,8 +1,8 @@
 /// <reference path="../../../../src/typings/_custom.d.ts" />
 
 // Angular 2
-import {Component, View, NgClass } from 'angular2/angular2';
-import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
+import {Component, View, NgClass } from '@angular/angular2';
+import {RouteConfig, ROUTER_DIRECTIVES} from '@angular/router-deprecated';
 
 import {SearchGithub} from '../../../rx-autosuggest/components/search-github';
 import {Timeflies} from '../../../rx-timeflies/components/timeflies';

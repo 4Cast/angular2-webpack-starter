@@ -1,6 +1,6 @@
 /// <reference path="../../../src/typings/_custom.d.ts" />
 
-import {Injectable} from 'angular2/angular2';
+import {Injectable} from '@angular/angular2';
 
 // Our Todo Service
 @Injectable()

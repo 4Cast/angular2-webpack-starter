@@ -1,10 +1,10 @@
 /// <reference path="../../../typings/_custom.d.ts" />
 
-import {Injectable, provide} from "angular2/angular2";
-import {Http, Response} from "angular2/http";
+import {Injectable, provide} from "@angular/angular2";
+import {Http, Response} from "@angular/http";
 import * as Rx  from '@reactivex/rxjs';
 
-//import {Promise} from "angular2/src/core/facade/async";
+//import {Promise} from "@angular/src/core/facade/async";
 
 /**
  * fourcastService works querying the fourcast Web API

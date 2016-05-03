@@ -1,6 +1,6 @@
 /// <reference path="../../../src/typings/_custom.d.ts" />
 
-import {bind} from 'angular2/angular2';
+import {bind} from '@angular/angular2';
 import {EXAMPLE_SERVICE_BINDINGS} from './example-service';
 
 

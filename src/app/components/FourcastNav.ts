@@ -5,11 +5,11 @@ import {
   View,
   provide,
   bootstrap
-} from "angular2/angular2";
+} from "@angular/angular2";
 
 import{
   RouterLink
-} from "angular2/router"
+} from "@angular/router-deprecated"
 
 
 @Component({

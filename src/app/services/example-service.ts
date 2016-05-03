@@ -1,7 +1,7 @@
 /// <reference path="../../../src/typings/_custom.d.ts" />
 
-import {Injectable} from 'angular2/angular2';
-import {Http} from 'angular2/http';
+import {Injectable} from '@angular/angular2';
+import {Http} from '@angular/http';
 import * as Rx from '@reactivex/rxjs';
 
 

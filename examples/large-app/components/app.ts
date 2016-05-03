@@ -3,14 +3,14 @@
 /*
  * Angular 2
  */
-import {Component, View} from 'angular2/angular2';
-import {RouteConfig} from 'angular2/router';
+import {Component, View} from '@angular/angular2';
+import {RouteConfig} from '@angular/router-deprecated';
 
 /*
  * Directives
  */
-import {CORE_DIRECTIVES, FORM_DIRECTIVES} from 'angular2/angular2';
-import {ROUTER_DIRECTIVES} from 'angular2/router';
+import {CORE_DIRECTIVES, FORM_DIRECTIVES} from '@angular/angular2';
+import {ROUTER_DIRECTIVES} from '@angular/router-deprecated';
 // Import all of our custom app directives
 import {APP_DIRECTIVES} from '../directives/directives';
 

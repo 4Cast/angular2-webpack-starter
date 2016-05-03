@@ -1,5 +1,5 @@
-import {Injectable, provide} from "angular2/core";
-import {Router} from 'angular2/router';
+import {Injectable, provide} from "@angular/core";
+import {Router} from '@angular/router-deprecated';
 
 @Injectable()
 export class KendoService {

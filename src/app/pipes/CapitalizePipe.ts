@@ -1,5 +1,5 @@
 /// <reference path="../../../src/typings/_custom.d.ts" />
-import {Pipe} from 'angular2/angular2';
+import {Pipe} from '@angular/angular2';
 
 // Check if the value is supported for the pipe
 export function isString(txt): boolean {

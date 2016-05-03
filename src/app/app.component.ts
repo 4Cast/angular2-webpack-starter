@@ -7,9 +7,9 @@
  */
 
 
-import {Component, OnInit, ViewEncapsulation} from 'angular2/core';
-import {RouteConfig, Router, ROUTER_DIRECTIVES, RouterLink, OnActivate, ComponentInstruction} from 'angular2/router-deprecated';
-import {FORM_PROVIDERS} from 'angular2/common';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {RouteConfig, Router, ROUTER_DIRECTIVES, RouterLink, OnActivate, ComponentInstruction} from '@angular/router-deprecated';
+import {FORM_PROVIDERS} from '@angular/common';
 import {FourcastService} from '../services/fourcast-service';
 
 
@@ -57,7 +57,7 @@ const APP_TEMPLATE = require('./app.html');
 })
 
 @RouteConfig([
-  { path: '/',            redirectTo: ['Cost-Codes'] },
+  { path: '/',            redirectTo: ['HeroForm'] },
   //{ path: '/home', component: Home, name: 'Home' },
   //{ path: '/kendo', component: kendoContainer, name: 'Kendo' },
   { path: '/about', component: About, name: 'About' },

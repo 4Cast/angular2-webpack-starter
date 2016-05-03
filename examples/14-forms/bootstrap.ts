@@ -1,7 +1,7 @@
 // Angular 2
-import {bootstrap} from 'angular2/angular2';
-import {Component, View} from 'angular2/angular2';
-import {CORE_DIRECTIVES, FORM_DIRECTIVES} from 'angular2/angular2';
+import {bootstrap} from '@angular/angular2';
+import {Component, View} from '@angular/angular2';
+import {CORE_DIRECTIVES, FORM_DIRECTIVES} from '@angular/angular2';
 
 class UserModel {
   firstName: string;

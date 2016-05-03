@@ -1,11 +1,11 @@
 /*
  * Providers provided by Angular
  */
-import {provide, enableProdMode} from 'angular2/core';
-import {bootstrap, ELEMENT_PROBE_PROVIDERS} from 'angular2/platform/browser';
-import {ROUTER_PROVIDERS, LocationStrategy, HashLocationStrategy} from 'angular2/router';
-import {HTTP_PROVIDERS} from 'angular2/http';
-import * as core from 'angular2/core';
+import {provide, enableProdMode} from '@angular/core';
+import {bootstrap, ELEMENT_PROBE_PROVIDERS} from '@angular/platform/browser';
+import {ROUTER_PROVIDERS, LocationStrategy, HashLocationStrategy} from '@angular/router-deprecated';
+import {HTTP_PROVIDERS} from '@angular/http';
+import * as core from '@angular/core';
 import {EnvironmentService} from './services/environment-service';
 import {FourcastService} from './services/fourcast-service';
 

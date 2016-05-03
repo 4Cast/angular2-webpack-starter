@@ -3,7 +3,7 @@
 /*
  * Angular
  */
-import {Component, View} from "angular2/angular2";
+import {Component, View} from "@angular/angular2";
 
 @Component({
   selector: "home"

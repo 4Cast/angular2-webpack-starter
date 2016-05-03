@@ -1,9 +1,9 @@
-import {Component, DynamicComponentLoader, ElementRef, OnInit} from 'angular2/core'
+import {Component, DynamicComponentLoader, ElementRef, OnInit} from '@angular/core'
 import {FourcastService} from "../../../services/fourcast-service";
 import {ViewDefinition} from '../../../services/view-definition';
-import {Response} from "angular2/http";
+import {Response} from "@angular/http";
 
-import {Router} from "angular2/router";
+import {Router} from "@angular/router-deprecated";
 import {KendoService} from "../../../services/kendo-service";
 
 
