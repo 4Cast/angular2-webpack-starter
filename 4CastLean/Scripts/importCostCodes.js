@@ -1,1 +1,0 @@
-﻿function doImport () {		var importJson = require('importJson'); 	 	var jsonString = importJson.importJson("ccod.txt");	 	//xvar jsonString = loadText( ds.getModelFolder().path + "Import/ccod.txt" ); 	ds.costCode.importJSON(jsonString);   }doImport();
