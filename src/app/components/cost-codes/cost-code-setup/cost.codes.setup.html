@@ -1,0 +1,13 @@
+<h4>Cost Code Setup</h4>
+
+<div *ngIf="editMode" style="margin-bottom:20px;">
+  <cost-code-detail (onChangeList) = "onChangeList($event)"></cost-code-detail>
+</div >
+
+<div *ngIf="!editMode" style="margin-bottom:20px;">
+  <button type="button" class="btn btn-primary btn-block" (click)="editMode = !editMode" >Add Cost Codes</button>
+</div >
+
+<div id="kendo-grid-container">
+    <cost-code-setup-list #list></cost-code-setup-list>
+</div>

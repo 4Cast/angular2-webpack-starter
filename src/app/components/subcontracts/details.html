@@ -1,0 +1,81 @@
+<div class="container">
+  <h4>Subcontract Details</h4>
+  <small>
+<form id="inputArea" class="form-horizontal">
+
+
+
+     <div class="form-group">
+       <label for="contractOriginal" class="col-sm-3 control-label" >Contract original amount</label>
+       <div class="col-sm-2">
+         <input type="text" class="form-control" id="contractOriginal" required [(ngModel)]="subcontract.amt_contractOriginal">
+       </div>
+     </div>
+
+     <div class="form-group">
+       <label for="contractDate" class="col-sm-3 control-label">Contract Date</label>
+       <div class="col-sm-2">
+         <input type="text" class="form-control" id="contractDate" required [(ngModel)]="subcontract.date_contract">
+       </div>
+     </div>
+
+     <div class="form-group">
+       <label for="commencementDate" class="col-sm-3 control-label">Commencement Date</label>
+       <div class="col-sm-3">
+         <input type="text" class="form-control" id="commencementDate" required [(ngModel)]="subcontract.date_commenced">
+       </div>
+
+     </div>
+
+     <div class="form-group">
+       <label for="completionDate" class="col-sm-3 control-label">Completion Date</label>
+       <div class="col-sm-3">
+         <input type="text" class="form-control" id="completionDate" required [(ngModel)]="subcontract.date_completed">
+       </div>
+     </div>
+
+
+
+
+    </form>
+  </small>
+</div>
+  <!-- <div class="container">
+      <h1>Subcontract Details</h1>
+      <div class="col-sm-12 ">
+
+      <form class="form-horizontal">
+
+        <div class="form-group">
+          <label for="contractOriginal" class="col-sm-2 control-label">Original Contract Amount</label>
+            <div classs="col-sm-10">
+                <input type="text" id = "contractOriginal" class="form-control" required [(ngModel)]="subcontract.amt_contractOriginal">
+            </div>
+        </div>
+
+        <div class="form-group">
+          <label for="contractDate" class="col-sm-2 control-label">Contract Date</label>
+            <div classs="col-sm-10">
+              <input type="text" class="form-control" id="contractDate" [(ngModel)]="subcontract.date_contract">
+            </div>
+        </div>
+
+        <div class="form-group">
+          <label for="commencementDate" class="col-sm-2 control-label">Commencement Date</label>
+          <div classs="col-sm-10">
+            <input type="text" class="form-control" id="commencementDate" [(ngModel)]="subcontract.date_commenced">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="completionDate" class="col-sm-2 control-label">Completion Date</label>
+          <div classs="col-sm-10">
+            <input type="text" class="form-control" id="completionDate" [(ngModel)]="subcontract.date_completed">
+          </div>
+        </div>
+
+      <button type="submit" class="btn btn-default">Submit</button>
+
+      </form>
+    </div>
+  </div> -->

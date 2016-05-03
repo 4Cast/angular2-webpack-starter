@@ -1,0 +1,2 @@
+"./node_modules/kendo/dist/js/kendo.all.min.js",
+"./node_modules/kendo/dist/js/kendo.angular2.min.js"

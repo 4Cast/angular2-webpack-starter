@@ -1,0 +1,11 @@
+@import url(bootstrap@3.3.5.min.css);
+@import url(semantic.min.css);
+
+/* Custom style from Semenatic Kickstarter*/
+body { background-color: #EAECEC; margin-top: 65px !important; }
+.bim-container {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*# sourceMappingURL=styles.css.map */
