@@ -24,6 +24,49 @@
   <link rel="icon" type="image/png" sizes="96x96" href="/assets/icon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icon/favicon-16x16.png">
   <link rel="manifest" href="/assets/manifest.json">
+
+<!-- <link href="./css/ag-styles/ag-grid.css" rel="stylesheet" />
+<link href="./css/ag-styles/theme-blue.css" rel="stylesheet" />
+<link href="./css/ag-styles/theme-fresh.css" rel="stylesheet" /> -->
+
+
+  <link rel="stylesheet" href="./css/kendo/kendo.common.min.css" />
+  <link rel="stylesheet" href="./css/kendo/kendo.default.min.css" />
+ <link rel="stylesheet" href="./css/kendo/kendo.material.min.css" />
+
+ <style>
+
+/*div.form-control.file-caption.kv-fileinput-caption.inputvalid used on file-select component*/
+
+ .ng-valid[required], div.form-control.file-caption.kv-fileinput-caption.inputvalid {
+   border-left: 5px solid #42A948; /* green */
+ }
+
+ .ng-invalid[required], div.form-control.file-caption.kv-fileinput-caption.inputinvalid {
+   border-left: 5px solid #a94442; /* red */
+ }
+
+
+
+
+ table.k-selectable
+     {
+         cursor: default !important;
+     }
+
+     .k-grid tr:hover {
+       background-color: #ebebeb;
+     }
+
+     .k-grid .k-alt {
+       background-color:rgb(245, 245, 255);
+     }
+</style>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/kendo.all.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+
   <meta name="msapplication-TileColor" content="#00bcd4">
   <meta name="msapplication-TileImage" content="/assets/icon/ms-icon-144x144.png">
   <meta name="theme-color" content="#00bcd4">
@@ -56,7 +99,7 @@
   <!-- Webpack Dev Server reload -->
   <script src="/webpack-dev-server.js"></script>
   <% } %>
-  
+
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </body>

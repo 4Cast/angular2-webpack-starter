@@ -1,3 +1,37 @@
+@import url(/css/bootstrap@3.3.5.min.css);
+/*@import url(/css/semantic.min.css);*/
+/*@import url(/css/ag-styles/ag-grid.css);*/
+@import url(/css/fileinput.css);
+@import url(/css/bootstrap-sidebar/bootstrap-sidebar.css);
+@import url(/css/bootstrap-sidebar/font-awesome.min.css);
+
+
+
+
+table.k-selectable
+    {
+        cursor: default !important;
+    }
+
+.ag-fresh .ag-header {
+  background: webkit-linear-gradient(#388CFF, #1433ff);
+  background: linear-gradient (#388CFF, #1433ff);
+}
+
+.navbar-inverse{
+  background-color: rgb(34, 79, 119);
+
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #d9edf7;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover{
+    color: #fff;
+    background-color: transparent;
+}
+
 .top-nav {
   height: 56px;
   min-height: 56px;
@@ -81,4 +115,20 @@ a:active, a:hover {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.table-fixed thead {
+  width: 97%;
+}
+.table-fixed tbody {
+  height: 230px;
+  overflow-y: auto;
+  width: 100%;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+  display: block;
+}
+.table-fixed tbody td, .table-fixed thead > tr> th {
+  float: left;
+  border-bottom-width: 0;
 }
