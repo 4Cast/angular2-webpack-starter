@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="col-sm-12 text-primary">
+  <h4>Project Preferences</h4>
+</div>
+  <small>
+<form id="inputArea" class="form-horizontal">
+
+
+
+     <div class="form-group">
+       <label for="currencySymbol" class="col-sm-3 control-label" >Currency Symbol</label>
+       <div class="col-sm-2">
+         <input type="text" class="form-control" id="currencySymbol" required [(ngModel)]="project.pref_currencySymbol">
+       </div>
+     </div>
+
+     <div class="form-group">
+       <label for="baseCurrency" class="col-sm-3 control-label">Project Name</label>
+       <div class="col-sm-2">
+         <input type="text" class="form-control" id="baseCurrency" required [(ngModel)]="project.pref_baseCurrency">
+       </div>
+     </div>
+
+     <div class="form-group">
+       <label for="headContractBasedOn" class="col-sm-3 control-label">Head Contract Based On</label>
+       <div class="col-sm-3">
+         <input type="text" class="form-control" id="headContractBasedOn" required [(ngModel)]="project.pref_contractBasedOn">
+       </div>
+
+     </div>
+
+     <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-10">
+      <!-- <div class="checkbox">
+        <label>
+          <input type="checkbox" id="doNotPaySubcontractors" [attr.checked]="project.pref_doNotPaySubcontractors" (click)="onClickDoNotPay($event)">Do not pay subcontractors
+        </label>
+      </div> -->
+      <div class="checkbox" *ngIf="project.pref_doNotPaySubcontractors">
+        <label>
+          <input type="checkbox" id="doNotPaySubcontractors" checked (click)="onClickDoNotPay($event)">Do not pay subcontractors
+        </label>
+      </div>
+      <div class="checkbox" *ngIf="project.pref_doNotPaySubcontractors==false">
+        <label>
+          <input type="checkbox" id="doNotPaySubcontractors" (click)="onClickDoNotPay($event)">Do not pay subcontractors
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+ <div class="col-sm-offset-3 col-sm-10">
+   <div class="checkbox" *ngIf="project.pref_postCosts">
+     <label>
+       <input type="checkbox" id="pref_postCosts" checked (click)="onClickPostCosts($event)">Post Costs
+     </label>
+   </div>
+   <div class="checkbox" *ngIf="project.pref_postCosts==false">
+     <label>
+       <input type="checkbox" id="pref_postCosts" (click)="onClickPostCosts($event)">Post Costs
+     </label>
+   </div>
+ </div>
+</div>
+
+
+
+
+    </form>
+  </small>
+</div>

@@ -1,0 +1,113 @@
+
+/* === THEME FOR BOOTSTRAP SIDEBAR=== */
+/*http://codecanyon.net/item/bootstrap-sidebar-sidebar-accordion-menu/10020308*/
+
+/*** change sidebar background ***/
+
+/* all the following should be set in the sidebar component when we make it*/
+
+* {
+		outline: none !important;
+		border-radius: 0 !important;
+	}
+
+body {
+  text-rendering: optimizelegibility;
+}
+
+a:link, a:focus, a:visited, a:active, a:hover{
+  text-decoration: none;
+}
+
+i {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+  /*=== End of component css ===*/
+
+.sidebar {
+  background-color: #6595BC;
+  width: 300px;
+  height: 100%;
+  padding: 0px;
+  position: fixed;
+
+  right: auto;
+  top: 50px;
+  z-index: 1;
+  transition: left 0.5s;
+  -o-transition: left 0.5s;
+  -moz-transition: left 0.5s;
+  -webkit-transition: left 0.5s;
+  overflow-y: hidden;
+}
+
+.sidebar.show {
+		left: 0;
+		display: block;
+	}
+	.ps-scrollbar-y-rail {
+	  margin: 5px 0;
+	}
+/*** change panel-defaul background ***/
+.panel {
+		border: 0;
+		box-shadow: none;
+	}
+  .panel a:hover{
+    decoration: none;
+  }
+
+	.panel-default > .panel-heading {
+		background-color: #6595BC;
+	}
+	.panel-default > .panel-heading:hover {
+		background-color: #5B86A9;
+    decoration: none;
+	}
+	.panel-default > .panel-heading  a {
+		color: #FFF;
+		display: block;
+		padding: 8px 0px;
+    decoration: none;
+	}
+
+/*** change list-group-item background ***/
+.list-group-item {
+		padding-left: 25px;
+		border: 0;
+		background: #286090;
+	}
+/*** change list-group-item  background on hover ***/
+.list-group-item:hover {
+		    background: #365167;
+        padding-left: 15px;
+		    transition-delay: 0s;
+        transition-duration: 0.3s;
+        transition-property: all;
+        transition-timing-function: linear;
+	}
+/*** change anchor color ***/
+a.list-group-item {
+	color: #FFF;
+}
+/*** change anchor color on hover ***/
+a.list-group-item:hover {
+		background: #5881A2;
+		color: #FFF;
+	}
+
+/*** change background and color for active link ***/
+.solso-active {
+  background: #385269 !important;
+}
+
+.list-group-item.no-border {
+  border: 0;
+}
+
+.panel-group .panel + .panel {
+  margin-top: 0px;
+}
+/* === THEME FOR BOOTSTRAP SIDEBAR=== */

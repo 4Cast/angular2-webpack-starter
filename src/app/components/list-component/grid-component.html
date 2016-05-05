@@ -1,0 +1,14 @@
+<ag-grid-ng2
+    class="ag-fresh"
+    style="width:100%; height:800px; margin-bottom:20px;"
+    [gridOptions]="gridOptions"
+    [columnDefs]="columnDefs"
+    [rowData]="listData"
+
+    enableColResize
+    enableSorting
+    rowSelection="single"
+    suppressCellSelection
+    rowHeight="26"
+    (rowClicked)="onRowClicked($event)">
+</ag-grid-ng2>

@@ -1,0 +1,44 @@
+<div class="col-sm-3 bg-primary">
+    <h4>{{project.projectNumber}}</h4>
+</div>
+
+<div class="col-sm-9 bg-primary">
+    <h4>{{project.projectName}}</h4>
+</div>
+
+<!-- Sidebar Nav -->
+<div *ngIf='false'>
+<div class="col-sm-2">
+  <div class="list-group">
+  <button type="button" class="list-group-item" (click)="goToPage('General')">General</button>
+  <button type="button" class="list-group-item" (click)="goToPage('Preferences')">Preferences</button>
+  <button type="button" class="list-group-item" (click)="goToPage('Super')">Superintendant</button>
+  <button type="button" class="list-group-item">Proprietor</button>
+  <button type="button" class="list-group-item">Site Contact</button>
+  <button type="button" class="list-group-item">Office Contact</button>
+  <button type="button" class="list-group-item">Users</button>
+  <button type="button" class="list-group-item">Tax</button>
+  <button type="button" class="list-group-item">Partner</button>
+
+</div>
+</div>
+
+</div>
+
+<!-- Main detail area -->
+<div class="col-sm-10">
+
+
+<!--<a [router-link]="['./Summary', {id: 1} ]">Detail</a> -->
+
+ <router-outlet></router-outlet>
+
+
+</div>
+
+<!-- Footer -->
+
+<div class = "col-sm-10 col-sm-offset-2">
+<button class="btn btn-default" (click)="goBackToList()">Cancel</button>
+<button class="btn btn-success" (click)="updateProject()">Save Changes</button>
+</div>
