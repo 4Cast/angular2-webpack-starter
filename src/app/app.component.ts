@@ -8,7 +8,7 @@ import {Home} from './home';
 import {AppState} from './app.service';
 import {RouterActive} from './router-active';
 import {projects} from './components/project/projects';
-//import {SimpleComponent} from './components/simple.component/simple.component';
+import {SimpleComponent} from './components/simple.component/simple.component';
 import {MainMenu} from './components/main-menu/main-menu';
 import {Angular2Accordion} from './components/main-menu/main-menu-a';
 /*
@@ -29,13 +29,13 @@ const APP_TEMPLATE = require('./app.html');
   template: APP_TEMPLATE
 })
 @RouteConfig([
-  //{ path: '/',            redirectTo: ['Simple'] },
-  { path: '/',      name: 'Index', component: Home, useAsDefault: true },
+  { path: '/',            redirectTo: ['Projects'] },
+//  { path: '/',      name: 'Index', component: Home, useAsDefault: true },
   { path: '/home',  name: 'Home',  component: Home },
   // Async load a component using Webpack's require with es6-promise-loader and webpack `require`
   { path: '/about', name: 'About', loader: () => require('es6-promise!./about')('About') },
   { path: '/projects/...', component: projects, name: 'Projects' },
-  //{ path: '/simple', name: 'Simple', component: SimpleComponent}
+  { path: '/simple', name: 'Simple', component: SimpleComponent}
 ])
 export class App {
   angularclassLogo = 'assets/img/angularclass-avatar.png';

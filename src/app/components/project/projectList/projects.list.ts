@@ -6,8 +6,9 @@ import {Router} from '@angular/router-deprecated';
 @Component({
 selector: 'projects-list',
 template:`  <button type="button" class="btn btn-primary" (click)="newProject()">Create Project</button>
-              <p>&nbsp;</p>
-              <kendo-grid [viewDefinition]="viewDefinition"></kendo-grid>`,
+            <p>&nbsp;</p>
+            <kendo-grid [viewDefinition]="viewDefinition"></kendo-grid>
+              `,
 directives: [KendoGrid]
 })
 

@@ -1,6 +1,6 @@
 import {Directive, ElementRef, Renderer, Self, forwardRef, Provider} from '@angular/core';
 import {NG_VALUE_ACCESSOR, ControlValueAccessor} from '@angular/common';
-import {isBlank, CONST_EXPR} from '@angular/src/facade/lang';
+import {isBlank, CONST_EXPR} from 'angular2/src/facade/lang';
 
 const KENDO_VALUE_ACCESSOR = CONST_EXPR(new Provider(
     NG_VALUE_ACCESSOR, {useExisting: forwardRef(() => KendoValueAccessor), multi: true}));
@@ -14,13 +14,13 @@ const KENDO_VALUE_ACCESSOR = CONST_EXPR(new Provider(
 export class KendoValueAccessor implements ControlValueAccessor {
   onChange = (_) => {};
   onTouched = () => {};
-  
+
   element: any;
 
   constructor(private _renderer: Renderer, private _elementRef: ElementRef) {
     this.element = _elementRef.nativeElement;
   }
-  
+
   internalOnChange = () => {
     this.onChange(this.element.value());
   };
@@ -29,10 +29,10 @@ export class KendoValueAccessor implements ControlValueAccessor {
     this.element.value(value);
   }
 
-  registerOnChange(fn: (_: any) => void): void { 
-    this.onChange = fn; 
+  registerOnChange(fn: (_: any) => void): void {
+    this.onChange = fn;
   }
-  registerOnTouched(fn: () => void): void { 
-    this.onTouched = fn; 
+  registerOnTouched(fn: () => void): void {
+    this.onTouched = fn;
   }
 }

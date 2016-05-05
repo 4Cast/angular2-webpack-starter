@@ -1,7 +1,7 @@
 /*
  * Providers provided by Angular
  */
-import {bootstrap} from '@angular/platform-browser-dynamic/index';
+import {bootstrap} from '@angular/platform-browser-dynamic';
 /*
 * Platform and Environment
 * our providers/directives/pipes

@@ -17,7 +17,7 @@ import {Project} from '../app/class.definitions/project';
 
 
 
-//@Injectable()
+@Injectable()
 export class FourcastService {
 
 static theProject: any = {};
