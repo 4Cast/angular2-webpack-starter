@@ -1,0 +1,5 @@
+﻿{
+	"deploy.gitRemoteUrl": "origin",
+	"deploy.gitBranch": "master",
+	"deploy.gitRemoteBranch": "master"
+}

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Angular-Wakanda Step 5 - Getting related Data out of the box</title>
+
+  <script src="/bower_components/angular/angular.min.js"></script>
+  <script src="/bower_components/angular-wakanda/angular-wakanda.min.js"></script>
+  <script src="./scripts/step5.js"></script>
+</head>
+
+<body ng-app="step5">
+  <h1>Angular-Wakanda Step 5 - Getting related Data out of the box</h1>
+
+  <section ng-controller="Controller">
+    <p>
+      {{projects.$totalCount}} projects found:
+      <select ng-model="project" ng-options="c.projectName for c in projects">
+        <option value="">-- select a project to see its related cost codes --</option>
+      </select>
+    </p>
+    <div ng-show="project">
+      <p>Its project number is <strong>{{project.projectNumber}}</strong></p>
+      <p>
+        {{project.costCodes.$totalCount}} cost codes belong to this project:
+        <select ng-model="costCode" ng-options="c.name for c in project.costCodes">
+          <option value="">-- select a cost code to see its details --</option>
+        </select>
+      </p>
+      <p ng-show="costCode">Its number is <strong>{{costCode.number}}</strong></p>
+    </div>
+  </section>
+
+</body>
+</html>

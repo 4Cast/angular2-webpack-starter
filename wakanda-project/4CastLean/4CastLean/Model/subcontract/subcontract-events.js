@@ -1,0 +1,1 @@
+﻿var multiplier = 1000000;model.subcontract.amt_contractOriginalGross.onGet = function(){return this.amt_contractOriginalGross_int/multiplier;};model.subcontract.amt_contractOriginalGross.onGet = function() {	// Add your code here;};

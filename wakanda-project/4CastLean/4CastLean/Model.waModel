@@ -1,0 +1,150 @@
+{
+	"toJSON": true,
+	"extraProperties": {
+		"version": "2",
+		"classes": {
+			"scnt": {
+				"panelColor": "#996699",
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 25,
+						"Y": 20
+					}
+				}
+			},
+			"User": {
+				"panelColor": "#B8CCE4",
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 355,
+						"Y": 20
+					}
+				}
+			},
+			"supplier": {
+				"panelColor": "#4FA997",
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 25,
+						"Y": 20
+					}
+				}
+			},
+			"subcontract": {
+				"panelColor": "#8DB3E2",
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 275,
+						"Y": 20
+					}
+				}
+			},
+			"user": {
+				"panelColor": "#CCC1D9",
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 585,
+						"Y": 20
+					}
+				}
+			},
+			"period": {
+				"panelColor": "#E5B9B7",
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 825,
+						"Y": 20
+					}
+				}
+			},
+			"project": {
+				"panelColor": "#4FA997",
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 25,
+						"Y": 270
+					}
+				}
+			},
+			"costCode": {
+				"panelColor": "#548DD4",
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 25,
+						"Y": 1120
+					}
+				}
+			},
+			"costImportHeader": {
+				"panelColor": "#CCC1D9",
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 335,
+						"Y": 1670
+					}
+				}
+			},
+			"budgetReallocation": {
+				"panelColor": "#C4BD97",
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 585,
+						"Y": 520
+					}
+				}
+			},
+			"budgetVariation": {
+				"panelColor": "#4FA997",
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 585,
+						"Y": 770
+					}
+				}
+			},
+			"budgetVariationDetail": {
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 963,
+						"Y": 1923
+					}
+				},
+				"panelColor": "#76923C"
+			},
+			"budgetReallocationDetail": {
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 685,
+						"Y": 1921
+					}
+				},
+				"panelColor": "#fff"
+			}
+		},
+		"model": {
+			"scriptMode": "manual",
+			"workspaceLeft": 0,
+			"workspaceTop": 1018,
+			"lastScriptLocation": {
+				"subcontract": {
+					"events": "subcontract/subcontract-events.js"
+				}
+			}
+		}
+	},
+	"dataClasses": [],
+	"type": []
+}

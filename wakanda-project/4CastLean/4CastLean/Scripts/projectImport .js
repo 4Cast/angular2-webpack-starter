@@ -1,0 +1,1 @@
+﻿function doImport () {		var importJson = require('importJson'); 	 	var jsonString = importJson.importJson("projects.txt","Cockram Import Files");	 	 	ds.project.importJSON(jsonString);   }doImport();
